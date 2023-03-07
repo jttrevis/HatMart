@@ -1,0 +1,20 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 1440px;
+  margin: 0 auto;
+  
+}
+
+:root{
+  --primary-color: #b1422f;
+
+  --bg-grey: #1a1818;
+}
+
+body{
+  background: #0a0a0a;
+  font-family: sans-serif;
+  height:100%;
+}

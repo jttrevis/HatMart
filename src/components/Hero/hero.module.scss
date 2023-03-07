@@ -1,0 +1,64 @@
+.hero{
+  background-image: url('../../assets/bg1.png');
+  background-size: cover;
+  background-position: center;
+  height: 950px;
+  width: 100%;
+  
+
+  .heroText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    
+    h1{
+      font-size: 3.5rem;
+      color: whitesmoke;
+      margin-top: auto;
+      
+      
+      strong{
+        color: var(--primary-color);
+        
+        
+        &:before{
+          content: 'S';
+          padding: 0 7px;
+          background: rgba(0, 0, 0, 0.733);
+          border-radius: 30%;
+          
+        }
+      }
+   
+      span{
+        color: var(--primary-color);
+      }
+    }
+
+    .buttonContainer{
+      display: flex;
+      flex-direction: column;
+      gap: 1.8rem;
+      margin: 3rem 0;
+      
+
+      button{
+        width: 250px;
+        height: 79px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        border: none;
+        background: var(--primary-color);
+        border-radius: 15px;
+        transition: all 0.2s ease;
+
+        &:hover {
+          filter: brightness(0.8);
+        }
+      }
+    }
+  }
+  
+}
