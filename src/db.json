@@ -3,50 +3,90 @@
     {
       "id": 1,
       "brand": "Volcon",
-      "image": "12.png",
+      "image": "/12.png",
+      "color": "Black",
+      "size": "Ajustable",
+      "price": 25.00
+    },
+    {
+      "id": 11,
+      "brand": "Volcon",
+      "image": "/1.png",
       "color": "Black",
       "size": "Ajustable",
       "price": 25.00
     },
     {
       "id": 2,
-      "brand": "Volcon",
-      "image": "13.png",
-      "color": "Black",
-      "size": "Ajustable",
-      "price": 25.00
+      "brand": "Nike",
+      "image": "/11.png",
+      "color": "White",
+      "size": "Adjustable",
+      "price": 30.00
     },
     {
       "id": 3,
-      "brand": "Volcon",
-      "image": "14.png",
-      "color": "Black",
-      "size": "Ajustable",
-      "price": 25.00
+      "brand": "Adidas",
+      "image": "/10.png",
+      "color": "Blue",
+      "size": "Adjustable",
+      "price": 27.50
     },
     {
       "id": 4,
-      "brand": "Volcon",
-      "image": "11.png",
-      "color": "Black",
-      "size": "Ajustable",
-      "price": 25.00
+      "brand": "Puma",
+      "image": "/9.png",
+      "color": "Red",
+      "size": "Adjustable",
+      "price": 22.00
     },
     {
       "id": 5,
-      "brand": "Volcon",
-      "image": "10.png",
-      "color": "Black",
-      "size": "Ajustable",
-      "price": 25.00
+      "brand": "Under Armour",
+      "image": "/8.png",
+      "color": "Green",
+      "size": "Adjustable",
+      "price": 35.00
     },
     {
       "id": 6,
-      "brand": "Volcon",
-      "image": "9.png",
-      "color": "Black",
-      "size": "Ajustable",
-      "price": 25.00
+      "brand": "New Era",
+      "image": "/7.png",
+      "color": "Yellow",
+      "size": "Adjustable",
+      "price": 28.00
+    },
+    {
+      "id": 7,
+      "brand": "Vans",
+      "image": "/6.png",
+      "color": "Purple",
+      "size": "Adjustable",
+      "price": 20.00
+    },
+    {
+      "id": 8,
+      "brand": "Reebok",
+      "image": "/5.png",
+      "color": "Orange",
+      "size": "Adjustable",
+      "price": 29.50
+    },
+    {
+      "id": 9,
+      "brand": "Fila",
+      "image": "/4.png",
+      "color": "Gray",
+      "size": "Adjustable",
+      "price": 24.99
+    },
+    {
+      "id": 10,
+      "brand": "Converse",
+      "image": "/3.png",
+      "color": "Pink",
+      "size": "Adjustable",
+      "price": 32.00
     }
   ]
 }
