@@ -3,7 +3,7 @@
     {
       "id": 1,
       "brand": "Volcon",
-      "image": "src/assets/products/12.png",
+      "image": "12.png",
       "color": "Black",
       "size": "Ajustable",
       "price": 25.00
@@ -11,7 +11,7 @@
     {
       "id": 2,
       "brand": "Volcon",
-      "image": "src/assets/products/13.png",
+      "image": "13.png",
       "color": "Black",
       "size": "Ajustable",
       "price": 25.00
@@ -19,7 +19,7 @@
     {
       "id": 3,
       "brand": "Volcon",
-      "image": "src/assets/products/14.png",
+      "image": "14.png",
       "color": "Black",
       "size": "Ajustable",
       "price": 25.00
@@ -27,7 +27,7 @@
     {
       "id": 4,
       "brand": "Volcon",
-      "image": "src/assets/products/11.png",
+      "image": "11.png",
       "color": "Black",
       "size": "Ajustable",
       "price": 25.00
@@ -35,7 +35,7 @@
     {
       "id": 5,
       "brand": "Volcon",
-      "image": "src/assets/products/10.png",
+      "image": "10.png",
       "color": "Black",
       "size": "Ajustable",
       "price": 25.00
@@ -43,7 +43,7 @@
     {
       "id": 6,
       "brand": "Volcon",
-      "image": "src/assets/products/9.png",
+      "image": "9.png",
       "color": "Black",
       "size": "Ajustable",
       "price": 25.00
