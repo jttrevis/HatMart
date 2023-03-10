@@ -1,12 +1,11 @@
 import React from 'react';
 import styles from './products.module.scss';
-import decor from '../../assets/decor1.svg';
 import '@splidejs/react-splide/css';
 
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 
 import { hats } from '../../db.json';
-import { Link } from 'react-router-dom';
+import ItemCard from '../Item/ItemCard';
 const Products = () => {
 	return (
 		<div className={styles.productContainer}>
@@ -24,18 +23,14 @@ const Products = () => {
 					hats.map((item) => {
 						return (
 							<SplideSlide key={item.id}>
-								<div className={styles.itemContainer}>
-									<Link to={'/hat/' + item.id}>
-										<img src={item.image} alt="" />
-									</Link>
-									<div className={styles.item}>
-										<h3>Brand: {item.brand}</h3>
-										<p>Color: {item.color}</p>
-										<p>Size: {item.size}</p>
-										<img src={decor} alt="" />
-										<button>$ {item.price}</button>
-									</div>
-								</div>
+								<ItemCard
+									brand={item.brand}
+									id={item.id}
+									image={item.image}
+									color={item.color}
+									price={item.price}
+									size={item.size}
+								/>
 							</SplideSlide>
 						);
 					})}

@@ -4,46 +4,11 @@
   align-items: center;
   width: 100%;
   margin: 0 auto;
-  background: var(--bg-grey);
+  background: #00000023;
 
    img {
     border-radius: 15px;
   }
 
-  .itemContainer{
-    display: flex;
-    flex-direction: column;
-    color: whitesmoke;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 3rem 0;
-    gap: 3rem;
-
-    .item{
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-
-
-  
-      button{
-        width: 150px;
-        height: 50px;
-        font-size: 1.5rem;
-        font-weight: bold;
-        border: none;
-        background: var(--primary-color);
-        border-radius: 15px;
-        transition: all 0.2s ease;
-        
-        
-
-        &:hover {
-          filter: brightness(0.8);
-        }
-      }
-
-    }
-  }
+ 
 }
