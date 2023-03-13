@@ -1,19 +1,21 @@
 .itemContainer{
   display: flex;
-  padding: 6rem 0;
-  
+  padding: 7rem 0;
+  gap: 1rem;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
   width: 100%;
-  max-width: 900px;
+  
+  height: 100vh;
   .hatImage{
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
     width: 100%;
-    max-width: 400px;
+    max-width: 800px;
+    margin-top: 5rem;
   }
 
   

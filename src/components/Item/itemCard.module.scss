@@ -4,12 +4,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  width: 80%;
+ 
+  
   .hatImage{
-    border-radius: 10px;
-    width: 100%;
-    max-width: 400px;
+    border-radius: 15px;
+    
+    max-width: 266px;
   }
 
   .item{
@@ -23,41 +23,22 @@
     height: 50%;
 
 
-    div{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      margin-top: auto;
-      img{
-        max-width: 60px;
-        margin-bottom: 15px;
+    // div{
+    //   display: flex;
+    //   justify-content: center;
+    //   align-items: center;
+    //   flex-direction: column;
+    //   margin-top: auto;
+    //   img{
+    //     max-width: 60px;
+    //     margin-bottom: 15px;
         
-      }
+    //   }
   
   
 
-    }
+    // }
 
 
   }}
-  .btn{
-    width: 150px;
-    height: 50px;
-    font-size: 1.5rem;
-    font-weight: bold;
-    border: none;
-    background: var(--primary-color);
-    border-radius: 15px;
-    transition: all 0.2s ease;
-    cursor: pointer;
-    
-   
-    
-    
-    
 
-    &:hover {
-      filter: brightness(0.8);
-    }
-  }

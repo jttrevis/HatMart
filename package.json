@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@prismicio/client": "^6.7.3",
+    "@prismicio/react": "^2.5.2",
     "@splidejs/react-splide": "^0.7.12",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

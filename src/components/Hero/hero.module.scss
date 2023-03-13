@@ -1,9 +1,8 @@
 .hero{
-  background-image: url('../../assets/bg1.png');
+  background-image: url('../../assets/bgHero.png');
   background-size: cover;
   background-position: center;
- 
-  height: 950px;
+  padding-top: 6rem;
   width: 100%;
   
 
@@ -12,31 +11,47 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    flex-direction: column;
-    
-    h1{
-      font-size: 3.5rem;
-      color: whitesmoke;
-      margin-top: auto;
+    .heroImage {
+      max-width: 1000px;
+      margin-left: -300px;
       
-      
-      strong{
-        color: var(--primary-color);
+    }
+
+    .callHero{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      h1{
+        font-size: 3.5rem;
+        color: whitesmoke;
+        margin-top: auto;
         
         
-        &:before{
-          content: 'S';
-          padding: 0 7px;
-          background: rgba(0, 0, 0, 0.733);
-          border-radius: 30%;
+        strong{
+          color: var(--primary-color);
           
+          
+          &:before{
+            content: 'S';
+            padding: 0 7px;
+            background: rgba(0, 0, 0, 0.733);
+            border-radius: 30%;
+            
+          }
+        }
+     
+        span{
+          color: var(--primary-color);
         }
       }
-   
-      span{
-        color: var(--primary-color);
-      }
+
     }
+    
+    
+   
 
     .buttonContainer{
       display: flex;
@@ -46,14 +61,15 @@
       
 
       button{
-        width: 250px;
-        height: 79px;
+        width: 255px;
+        height: 60px;
         font-size: 1.5rem;
         font-weight: bold;
         border: none;
         background: var(--primary-color);
         border-radius: 15px;
         transition: all 0.2s ease;
+        color: whitesmoke;
 
         &:hover {
           filter: brightness(0.8);

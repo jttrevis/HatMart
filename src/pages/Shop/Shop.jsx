@@ -3,6 +3,8 @@ import styles from './shop.module.scss';
 import decor from '../../assets/decor1.svg';
 import { hats } from '../../db.json';
 import { Link } from 'react-router-dom';
+import Button from './../../components/Button/Button';
+
 const Shop = () => {
 	const [selectedBrand, setSelectedBrand] = useState('');
 	const [selectedColor, setSelectedColor] = useState('');
@@ -70,7 +72,7 @@ const Shop = () => {
 									<p>Color: {hat.color}</p>
 									<p>Size: {hat.size}</p>
 									<img src={decor} alt="" />
-									<button>$ {hat.price}</button>
+									<Button>${hat.price}</Button>
 								</div>
 							</div>
 						);

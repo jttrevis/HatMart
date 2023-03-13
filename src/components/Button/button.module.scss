@@ -1,0 +1,21 @@
+.button{
+  width: 264px;
+  height: 63px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  color: whitesmoke;
+  background: var(--primary-color);
+  border-radius: 15px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  
+ 
+  
+  
+  
+
+  &:hover {
+    filter: brightness(0.8);
+  }
+}

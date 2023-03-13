@@ -5,6 +5,11 @@
   width: 100%;
   z-index: 99999;
   
+
+  }
+
+
+  
   
   nav{
     display: flex;
@@ -16,14 +21,18 @@
     height: 6rem;
     color: white;
     
-    a{
+    .logoContainer{
+      display: flex;
+      justify-content: center;
+      align-items: center;
       text-decoration: none;
-      h1{
+  
+        h1{
         font-weight: 400;
-        font-size: 40px;
+        font-size: 2.1rem;
         color: var(--primary-color);
         position: relative;
-  
+        
         &:after{
           content: '';
           position: absolute;
@@ -31,11 +40,16 @@
           background: var(--primary-color);
           height: 2px;
           right: -40px;
-          bottom: 20px;
+          bottom: 13px;
           
         }
       }
-    }
+      }
+
+      .logoImg{
+        width: 100px;
+      }
+ 
 
     div{
       display: flex;
@@ -49,7 +63,7 @@
         transition: all 0.2s ease;
         text-decoration: none;
          
-        color: var(--primary-color);
+        color: whitesmoke;
 
         &:hover{
           border-bottom: 1px solid var(--primary-color); 
@@ -62,14 +76,13 @@
   }
   
 
-}
+
 
 @media (max-width: 768px) {
   .header{
     display: flex;
     justify-content: center;
     align-items: center;
-
     position: relative;
   }
 }

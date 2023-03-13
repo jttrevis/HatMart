@@ -2,91 +2,228 @@
   "hats": [
     {
       "id": 1,
-      "brand": "Volcon",
-      "image": "/12.png",
-      "color": "Black",
-      "size": "Ajustable",
-      "price": 25.00
-    },
-    {
-      "id": 11,
-      "brand": "Volcon",
-      "image": "/1.png",
-      "color": "Black",
-      "size": "Ajustable",
-      "price": 25.00
+      "brand": "Snap City",
+      "image": "/12g.png",
+      "color": "Grey",
+      "size": "Adjustable",
+      "price": 19.99
     },
     {
       "id": 2,
-      "brand": "Nike",
-      "image": "/11.png",
-      "color": "White",
-      "size": "Adjustable",
-      "price": 30.00
+      "brand": "Fresh Gear",
+      "image": "/1b.png",
+      "color": "Black",
+      "size": "Small/Medium",
+      "price": 22.50
     },
     {
       "id": 3,
-      "brand": "Adidas",
-      "image": "/10.png",
-      "color": "Blue",
-      "size": "Adjustable",
-      "price": 27.50
+      "brand": "Crown Caps",
+      "image": "/1g.png",
+      "color": "Grey",
+      "size": "Large/X-Large",
+      "price": 24.99
     },
     {
       "id": 4,
-      "brand": "Puma",
-      "image": "/9.png",
-      "color": "Red",
+      "brand": "Snap Nation",
+      "image": "/1green.png",
+      "color": "Green",
       "size": "Adjustable",
-      "price": 22.00
+      "price": 21.99
     },
     {
       "id": 5,
-      "brand": "Under Armour",
-      "image": "/8.png",
-      "color": "Green",
-      "size": "Adjustable",
-      "price": 35.00
+      "brand": "Classic Lidz",
+      "image": "/1r.png",
+      "color": "Red",
+      "size": "Small/Medium",
+      "price": 18.75
     },
     {
       "id": 6,
-      "brand": "New Era",
-      "image": "/7.png",
-      "color": "Yellow",
-      "size": "Adjustable",
-      "price": 28.00
+      "brand": "Top Knotch Headwear",
+      "image": "/1w.png",
+      "color": "White",
+      "size": "Large/X-Large",
+      "price": 26.99
     },
     {
       "id": 7,
-      "brand": "Vans",
-      "image": "/6.png",
-      "color": "Purple",
+      "brand": "Urban Headz",
+      "image": "/2b.png",
+      "color": "Black",
       "size": "Adjustable",
-      "price": 20.00
+      "price": 23.50
     },
     {
       "id": 8,
-      "brand": "Reebok",
-      "image": "/5.png",
-      "color": "Orange",
-      "size": "Adjustable",
-      "price": 29.50
+      "brand": "Snap Fitted",
+      "image": "/2blue.png",
+      "color": "Blue",
+      "size": "Small/Medium",
+      "price": 20.99
     },
     {
       "id": 9,
-      "brand": "Fila",
-      "image": "/4.png",
-      "color": "Gray",
+      "brand": "Cap Kings",
+      "image": "/2g.png",
+      "color": "Grey",
+      "size": "Large/X-Large",
+      "price": 25.99
+    },
+    {
+      "id": 10,
+      "brand": "Style Snapz",
+      "image": "/2r.png",
+      "color": "Red",
+      "size": "Adjustable",
+      "price": 21.25
+    },
+    {
+      "id": 11,
+      "brand": "Snap City",
+      "image": "/2w.png",
+      "color": "White",
+      "size": "Small/Medium",
+      "price": 19.99
+    },
+    {
+      "id": 12,
+      "brand": "Fresh Gear",
+      "image": "/3b.png",
+      "color": "Black",
+      "size": "Large/X-Large",
+      "price": 22.50
+    },
+    {
+      "id": 13,
+      "brand": "Crown Caps",
+      "image": "/3blue.png",
+      "color": "Blue",
       "size": "Adjustable",
       "price": 24.99
     },
     {
-      "id": 10,
-      "brand": "Converse",
-      "image": "/3.png",
-      "color": "Pink",
+      "id": 14,
+      "brand": "Snap Nation",
+      "image": "/3g.png",
+      "color": "Grey",
+      "size": "Small/Medium",
+      "price": 22.99
+    },
+    {
+      "id": 15,
+      "brand": "Classic Lidz",
+      "image": "/3r.png",
+      "color": "Red",
+      "size": "Large/X-Large",
+      "price": 18.75
+    },
+    {
+      "id": 16,
+      "brand": "Top Knotch Headwear",
+      "image": "/3w.png",
+      "color": "White",
       "size": "Adjustable",
-      "price": 32.00
+      "price": 26.99
+    },
+    {
+      "id": 17,
+      "brand": "Urban Headz",
+      "image": "/4b.png",
+      "color": "Black",
+      "size": "Small/Medium",
+      "price": 23.50
+    },
+    {
+      "id": 18,
+      "brand": "Snap Fitted",
+      "image": "/4blue.png",
+      "color": "Blue",
+      "size": "Large/X-Large",
+      "price": 20.99
+    },
+    {
+      "id": 19,
+      "brand": "Cap Kings",
+      "image": "/4g.png",
+      "color": "Grey",
+      "size": "Adjustable",
+      "price": 25.99
+    },
+    {
+      "id": 20,
+      "brand": "Style Snapz",
+      "image": "/4r.png",
+      "color": "Red",
+      "size": "Small/Medium",
+      "price": 21.25
+    },
+    {
+      "id": 21,
+      "brand": "Snap City",
+      "image": "/4w.png",
+      "color": "White",
+      "size": "Large/X-Large",
+      "price": 19.99
+    },
+    {
+      "id": 22,
+      "brand": "Fresh Gear",
+      "image": "/5b.png",
+      "color": "Black",
+      "size": "Adjustable",
+      "price": 22.50
+    },
+    {
+      "id": 23,
+      "brand": "Crown Caps",
+      "image": "/5blue.png",
+      "color": "Blue",
+      "size": "Small/Medium",
+      "price": 24.99
+    },
+    {
+      "id": 24,
+      "brand": "Snap Nation",
+      "image": "/5g.png",
+      "color": "Grey",
+      "size": "Large/X-Large",
+      "price": 21.99
+    },
+    {
+      "id": 25,
+      "brand": "Classic Lidz",
+      "image": "/5w.png",
+      "color": "White",
+      "size": "Adjustable",
+      "price": 18.75
+    },
+    {
+      "id": 26,
+      "brand": "Top Knotch Headwear",
+      "image": "/6b.png",
+      "color": "Black",
+      "size": "Small/Medium",
+      "price": 26.99
+    },
+    {
+      "id": 27,
+      "brand": "Urban Headz",
+      "image": "/6blue.png",
+      "color": "Blue",
+      "size": "Large/X-Large",
+      "price": 23.50
+    },
+    {
+      "id": 28,
+      "brand": "Snap Fitted",
+      "image": "/6g.png",
+      "color": "Grey",
+      "size": "Adjustable",
+      "price": 20.99
     }
-  ]
+    
+  ]  
 }

@@ -11,12 +11,14 @@ const Products = () => {
 		<div className={styles.productContainer}>
 			<Splide
 				options={{
-					perPage: 3,
 					rewind: true,
-					pauseOnHover: true,
-					arrows: false,
+					width: 1400,
+					perPage: 3,
 					autoplay: true,
-					lazyLoad: 'nearby',
+					rewind: true,
+					arrows: true,
+					drag: true,
+					rewindByDrag: true,
 				}}
 			>
 				{hats &&

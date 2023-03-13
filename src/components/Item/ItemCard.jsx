@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './itemCard.module.scss';
 import decor from '../../assets/decor1.svg';
+import Button from './../Button/Button';
 
 const ItemCard = ({ brand, size, color, price, image, id }) => {
 	return (
@@ -14,7 +15,7 @@ const ItemCard = ({ brand, size, color, price, image, id }) => {
 				<p>Color: {color}</p>
 				<p>Size: {size}</p>
 				<img src={decor} alt="" />
-				<button className={styles.btn}>$ {price}</button>
+				<Button>${price}</Button>
 			</div>
 		</div>
 	);
