@@ -4,11 +4,14 @@ import App from './App';
 import './index.css';
 import { PrismicProvider } from '@prismicio/react';
 import { client } from './services/prismic';
+import { CartProvider } from './context/CartContext';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 	<React.StrictMode>
-		<PrismicProvider client={client}>
-			<App />
-		</PrismicProvider>
+		<CartProvider>
+			<PrismicProvider client={client}>
+				<App />
+			</PrismicProvider>
+		</CartProvider>
 	</React.StrictMode>
 );

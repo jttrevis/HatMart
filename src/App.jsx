@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import Products from './components/Products/Products';
 import AppRoutes from './AppRoutes';
+import { BackToTopButton } from './components/BackToTopButton/BackToTopButton';
 
 function App() {
 	return (
@@ -11,6 +12,7 @@ function App() {
 			<Header />
 			<AppRoutes />
 			<Footer />
+			<BackToTopButton />
 		</BrowserRouter>
 	);
 }

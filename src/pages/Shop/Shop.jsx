@@ -4,6 +4,7 @@ import decor from '../../assets/decor1.svg';
 import { hats } from '../../db.json';
 import { Link } from 'react-router-dom';
 import Button from './../../components/Button/Button';
+import { useCart } from './../../context/CartContext';
 
 const Shop = () => {
 	const [selectedBrand, setSelectedBrand] = useState('');
@@ -22,6 +23,8 @@ const Shop = () => {
 			(!selectedBrand || hat.brand === selectedBrand) &&
 			(!selectedColor || hat.color === selectedColor)
 	);
+
+	const { addToCart } = useCart();
 
 	return (
 		<div className={styles.shopContainer}>
@@ -63,7 +66,7 @@ const Shop = () => {
 				{filterdHats &&
 					filterdHats.map((hat) => {
 						return (
-							<div className={styles.itemsContainer}>
+							<div key={hat.id} className={styles.itemsContainer}>
 								<Link className={styles.itemsImage} to={'/hat/' + hat.id}>
 									<img src={hat.image} alt="" />
 								</Link>
@@ -72,7 +75,7 @@ const Shop = () => {
 									<p>Color: {hat.color}</p>
 									<p>Size: {hat.size}</p>
 									<img src={decor} alt="" />
-									<Button>${hat.price}</Button>
+									<Button onClick={() => addToCart(hat)}>${hat.price}</Button>
 								</div>
 							</div>
 						);
