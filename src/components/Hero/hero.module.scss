@@ -33,14 +33,7 @@
         strong{
           color: var(--primary-color);
           
-          
-          &:before{
-            content: 'S';
-            padding: 0 7px;
-            background: rgba(0, 0, 0, 0.733);
-            border-radius: 30%;
-            
-          }
+    
         }
      
         span{

@@ -6,7 +6,9 @@ import { Splide, SplideSlide } from '@splidejs/react-splide';
 
 import { hats } from '../../db.json';
 import ItemCard from '../Item/ItemCard';
+import { useCart } from './../../context/CartContext';
 const Products = () => {
+	const { addToCart } = useCart();
 	return (
 		<div className={styles.productContainer}>
 			<Splide
@@ -15,7 +17,7 @@ const Products = () => {
 					width: 1400,
 					perPage: 3,
 					autoplay: true,
-					rewind: true,
+
 					arrows: true,
 					drag: true,
 					rewindByDrag: true,
@@ -32,6 +34,7 @@ const Products = () => {
 									color={item.color}
 									price={item.price}
 									size={item.size}
+									onClick={() => addToCart(item)}
 								/>
 							</SplideSlide>
 						);

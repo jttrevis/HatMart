@@ -8,7 +8,7 @@ const Hero = () => {
 				<img className={styles.heroImage} src="/bone.png" alt="" />
 				<div className={styles.callHero}>
 					<h1>
-						<strong></strong>napbacks for every occasion<span>.</span>
+						<strong>S</strong>napbacks for every occasion<span>.</span>
 					</h1>
 					<div className={styles.buttonContainer}>
 						<img src={decor} alt="" />
