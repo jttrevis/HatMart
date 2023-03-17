@@ -5,6 +5,7 @@ import { hats } from '../../db.json';
 import { Link } from 'react-router-dom';
 import Button from './../../components/Button/Button';
 import { useCart } from './../../context/CartContext';
+import { motion } from 'framer-motion';
 
 const Shop = () => {
 	const [selectedBrand, setSelectedBrand] = useState('');
@@ -66,7 +67,13 @@ const Shop = () => {
 				{filterdHats &&
 					filterdHats.map((hat) => {
 						return (
-							<div key={hat.id} className={styles.itemsContainer}>
+							<motion.div
+								initial={{ opacity: 0 }}
+								animate={{ opacity: 1 }}
+								transition={{ duration: 1.5 }}
+								key={hat.id}
+								className={styles.itemsContainer}
+							>
 								<Link className={styles.itemsImage} to={'/hat/' + hat.id}>
 									<img src={hat.image} alt="" />
 								</Link>
@@ -77,7 +84,7 @@ const Shop = () => {
 									<img src={decor} alt="" />
 									<Button onClick={() => addToCart(hat)}>${hat.price}</Button>
 								</div>
-							</div>
+							</motion.div>
 						);
 					})}
 			</section>

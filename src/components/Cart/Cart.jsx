@@ -5,6 +5,7 @@ import { AiOutlinePlusCircle, AiOutlineMinusCircle } from 'react-icons/ai';
 import { IoMdClose } from 'react-icons/io';
 import Button from './../Button/Button';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 const formatter = new Intl.NumberFormat('en-US', {
 	style: 'currency',
 	currency: 'USD',
@@ -28,7 +29,12 @@ const Cart = ({ isOpen, onClose }) => {
 			<div className={styles.cartItems}>
 				{cartItems &&
 					cartItems.map((item) => (
-						<div key={item.id}>
+						<motion.div
+							initial={{ opacity: 0 }}
+							animate={{ opacity: 1 }}
+							transition={{ duration: 1.5 }}
+							key={item.id}
+						>
 							<div className={styles.item}>
 								<Link to={'/hat/' + item.id}>
 									<img src={item.image} alt="" />
@@ -49,7 +55,7 @@ const Cart = ({ isOpen, onClose }) => {
 									</div>
 								</div>
 							</div>
-						</div>
+						</motion.div>
 					))}
 				<div className={styles.cartValues}>
 					<h4>item(s): {totalItems}</h4>
