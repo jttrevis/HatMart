@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { BsFillArrowUpCircleFill } from 'react-icons/bs';
+import { TbArrowBarToUp } from 'react-icons/tb';
 
 export const BackToTopButton = () => {
 	const [backToTopButton, setBackToTopButton] = useState(false);
@@ -28,13 +28,13 @@ export const BackToTopButton = () => {
 					style={{
 						color: '#b1422f',
 						position: 'fixed',
-						bottom: 6,
-						right: 5,
+						bottom: 15,
+						right: 15,
 						background: 'transparent',
 						border: 'none',
 					}}
 				>
-					<BsFillArrowUpCircleFill size={45} color={'#b1422f'} />
+					<TbArrowBarToUp size={45} color={'#b1422f'} />
 				</button>
 			)}
 		</div>

@@ -6,6 +6,7 @@ import {
 	FaInstagram,
 	FaWhatsapp,
 } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 const Footer = () => {
 	return (
 		<footer className={styles.footer}>
@@ -41,10 +42,10 @@ const Footer = () => {
 					<h4>Navigation</h4>
 					<ul>
 						<li>
-							<a href="#">Home</a>
+							<a href={'/'}>Home</a>
 						</li>
 						<li>
-							<a href="#">Shop</a>
+							<Link to={'/shop'}>Shop</Link>
 						</li>
 						<li>
 							<a href="#">About Us</a>

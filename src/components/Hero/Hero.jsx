@@ -2,6 +2,7 @@ import React from 'react';
 import decor from '../../assets/decor.svg';
 import styles from './hero.module.scss';
 import { InViewSection, InViewSection2 } from '../InViewSection';
+import { Link } from 'react-router-dom';
 const Hero = () => {
 	return (
 		<section className={styles.hero}>
@@ -16,7 +17,9 @@ const Hero = () => {
 						</h1>
 						<div className={styles.buttonContainer}>
 							<img src={decor} alt="" />
-							<button>Avaible now</button>
+							<Link to={'/shop'}>
+								<button>Buy now</button>
+							</Link>
 						</div>
 					</InViewSection2>
 				</div>
