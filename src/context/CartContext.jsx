@@ -1,4 +1,6 @@
 import { useState, createContext, useContext, useEffect } from 'react';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const CartContext = createContext({
 	cartItems: [],
@@ -26,18 +28,25 @@ export const CartProvider = ({ children }) => {
 		const existingItem = cartItems.find((cartItem) => cartItem.id === item.id);
 
 		if (existingItem) {
-			setCartItems((prevCartItems) =>
-				prevCartItems.map((cartItem) =>
-					cartItem.id === item.id
-						? { ...cartItem, quantity: cartItem.quantity + 1 }
-						: cartItem
-				)
+			setCartItems(
+				(prevCartItems) =>
+					prevCartItems.map((cartItem) =>
+						cartItem.id === item.id
+							? { ...cartItem, quantity: cartItem.quantity + 1 }
+							: cartItem
+					),
+				toast.success(`${item.brand} Added on cart!`, {
+					position: toast.POSITION.BOTTOM_LEFT,
+				})
 			);
 		} else {
 			setCartItems((prevCartItems) => [
 				...prevCartItems,
 				{ ...item, quantity: 1 },
 			]);
+			toast.success(`${item.brand} Added on cart!`, {
+				position: toast.POSITION.BOTTOM_LEFT,
+			});
 		}
 	};
 
