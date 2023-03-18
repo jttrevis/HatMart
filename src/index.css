@@ -28,6 +28,7 @@ body{
   background-image: linear-gradient(to right bottom, #212121, #1c1c1c, #181818, #131313, #0c0c0c, #0b0b0b, #090909, #080808, #0e0e0e, #131313, #171717, #1a1a1a);
   font-family: 'Orbitron', sans-serif;
   height:100%;
+  overflow-x: hidden;
  
 }
 

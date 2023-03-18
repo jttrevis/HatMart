@@ -41,7 +41,7 @@
   }
 
   .hatsContainer{
-    width: 90%;
+    width: 84%;
     padding-top: 6rem;
     flex-wrap: wrap;
     display: flex;
@@ -55,15 +55,20 @@
       padding: 2rem;
 
     .itemsImage{
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 100%;
       img{
         max-width: 266px;
-        border-radius: 15px;
+        border-radius: 10px;
       }
     }
     .item{
       display: flex;
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
       gap: 1rem;
 
      
@@ -72,4 +77,17 @@
     }
 
   }
+}
+
+@media (max-width: 500px) {
+  .itemsImage{
+    img{
+      width: 200px;
+      
+      
+    }
+  }
+
+  
+  
 }

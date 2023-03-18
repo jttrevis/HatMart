@@ -40,7 +40,7 @@ const Header = () => {
 					to="/"
 				>
 					<img className={styles.logoImg} src={logo} />
-					<h1>Frulak</h1>
+					<h1>Hat Store</h1>
 				</NavLink>
 				<div>
 					<NavLink onClick={handleCloseCart} to="/">

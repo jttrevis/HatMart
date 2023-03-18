@@ -9,11 +9,13 @@
   font-weight: lighter;
   padding-top: 3rem;
 
+
  
   .footerContainer {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 
     .footerSection {
       width: 300px;

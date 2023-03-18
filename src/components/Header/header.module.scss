@@ -79,6 +79,16 @@
   }
 
   @media (max-width: 600px) {
+    .header{
+      nav,  a{
+        position: sticky;
+        top: 0;
+        width: 100%;
+        font-size: 1rem;
+        padding: 10px;
+      }
+    }
+
     .logoContainer{
       h1{
         display: none;
