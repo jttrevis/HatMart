@@ -4,7 +4,7 @@
   position: fixed;
   width: 100%;
   z-index: 99999;
-  
+  overflow: hidden;
 
   }
 
@@ -60,13 +60,16 @@
         list-style: none;
         font-size: 1.2rem;
         padding: 1rem;
-        transition: all 0.2s ease;
         text-decoration: none;
-         
+        border-radius: 10px;
         color: whitesmoke;
+        transition: all 0.3s ease-in-out;
 
         &:hover{
           border-bottom: 1px solid var(--primary-color); 
+          color: var(--primary-color);
+          background-color: rgb(0, 0, 0);
+       
           
         }
 
@@ -74,15 +77,15 @@
       }
     }
   }
+
+  @media (max-width: 600px) {
+    .logoContainer{
+      h1{
+        display: none;
+      }
+    }
+  }
   
 
 
 
-@media (max-width: 768px) {
-  .header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-}

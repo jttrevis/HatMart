@@ -32,6 +32,7 @@ export const BackToTopButton = () => {
 						right: 15,
 						background: 'transparent',
 						border: 'none',
+						cursor: 'pointer',
 					}}
 				>
 					<TbArrowBarToUp size={45} color={'#b1422f'} />

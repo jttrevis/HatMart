@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './cart.module.scss';
 import { useCart } from './../../context/CartContext';
 import { AiOutlinePlusCircle, AiOutlineMinusCircle } from 'react-icons/ai';
+import { MdDeleteForever } from 'react-icons/md';
 import { IoMdClose } from 'react-icons/io';
 import Button from './../Button/Button';
 import { Link } from 'react-router-dom';
@@ -19,6 +20,7 @@ const Cart = ({ isOpen, onClose }) => {
 		getItemQuantity,
 		removeFromCart,
 		addToCart,
+		deleteFromCart,
 	} = useCart();
 	return (
 		<div className={`${styles.cart} ${isOpen ? styles.open : ''}`}>
@@ -53,6 +55,12 @@ const Cart = ({ isOpen, onClose }) => {
 											size={18}
 										/>
 									</div>
+								</div>
+								<div
+									onClick={() => deleteFromCart(item.id)}
+									className={styles.delete}
+								>
+									<MdDeleteForever size={25} />
 								</div>
 							</div>
 						</motion.div>

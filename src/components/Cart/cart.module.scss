@@ -1,10 +1,10 @@
 .cart {
   position: fixed;
   top: 0;
-  right: -300px;
+  right: -400px;
   height: 100%;
   min-height: 100vh;
-  width: 300px;
+  width: 400px;
   background-color: rgb(7, 7, 7);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   transition: right 0.3s ease-in-out;
@@ -53,10 +53,11 @@
 
 .item{
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  padding: 0.4rem;
   gap: 1rem;
-  border-radius: 15px;
+  border-radius: 10px;
+
+
 
   a{
     width: 100%;
@@ -64,7 +65,7 @@
     img{
       width: 100%;
       height: 100%;
-      border-radius: 15px;
+      border-radius: 10px;
       margin-right: auto;
     }
   }
@@ -76,9 +77,16 @@
 }
 
 .itemInfo{
-  display: inline;
-  text-align: left;
-  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  gap: 0.2rem;
+
+  div{
+    margin-top: auto;
+  }
 
 }
 
@@ -95,6 +103,20 @@
   }
 
   
+}
+.delete{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 10px;
+  border-left: 0.5px solid #b1432f2d;
+  transition: all 0.2s ease-in-out;
+  &:hover{
+    filter: brightness(0.8);
+  }
+
 }
 
 .quantityContainer{

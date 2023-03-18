@@ -68,6 +68,12 @@ export const CartProvider = ({ children }) => {
 		}
 	};
 
+	const deleteFromCart = (itemId) => {
+		setCartItems((prevCartItems) =>
+			prevCartItems.filter((cartItem) => cartItem.id !== itemId)
+		);
+	};
+
 	const getItemQuantity = (itemId) => {
 		const item = cartItems.find((cartItem) => cartItem.id === itemId);
 		return item ? item.quantity : 0;
@@ -92,6 +98,7 @@ export const CartProvider = ({ children }) => {
 				totalItems,
 				totalPrice,
 				getItemQuantity,
+				deleteFromCart,
 			}}
 		>
 			{children}

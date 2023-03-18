@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './header.module.scss';
 import logo from '../../assets/logo.png';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
@@ -6,6 +6,23 @@ import { NavLink } from 'react-router-dom';
 import Cart from '../Cart/Cart';
 const Header = () => {
 	const [isCartOpen, setIsCartOpen] = useState(false);
+	const [scrolled, setScrolled] = useState(false);
+
+	useEffect(() => {
+		const handleScroll = () => {
+			if (window.scrollY > 100) {
+				setScrolled(true);
+			} else {
+				setScrolled(false);
+			}
+		};
+		window.addEventListener('scroll', handleScroll);
+		return () => window.removeEventListener('scroll', handleScroll);
+	}, []);
+
+	const navbarStyle = {
+		backgroundColor: scrolled ? 'black' : 'transparent',
+	};
 
 	const handleOpenCart = () => {
 		setIsCartOpen(true);
@@ -15,7 +32,7 @@ const Header = () => {
 		setIsCartOpen(false);
 	};
 	return (
-		<header className={styles.header}>
+		<header style={navbarStyle} className={styles.header}>
 			<nav>
 				<NavLink
 					onClick={handleCloseCart}
@@ -34,8 +51,8 @@ const Header = () => {
 						Shop
 					</NavLink>
 
-					<NavLink>
-						<AiOutlineShoppingCart onClick={handleOpenCart} size={30} />
+					<NavLink onClick={handleOpenCart}>
+						<AiOutlineShoppingCart size={30} />
 					</NavLink>
 				</div>
 			</nav>
