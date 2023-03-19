@@ -7,7 +7,7 @@ export function InViewSection({ children }) {
 
 	return (
 		<section ref={ref}>
-			<p
+			<div
 				style={{
 					transform: isInView ? 'none' : 'translateX(-200px)',
 					opacity: isInView ? 1 : 0,
@@ -15,7 +15,7 @@ export function InViewSection({ children }) {
 				}}
 			>
 				{children}
-			</p>
+			</div>
 		</section>
 	);
 }
@@ -26,7 +26,7 @@ export function InViewSection2({ children }) {
 
 	return (
 		<section ref={ref}>
-			<p
+			<div
 				style={{
 					transform: isInView ? 'none' : 'translateX(400px)',
 					opacity: isInView ? 1 : 0,
@@ -34,7 +34,7 @@ export function InViewSection2({ children }) {
 				}}
 			>
 				{children}
-			</p>
+			</div>
 		</section>
 	);
 }

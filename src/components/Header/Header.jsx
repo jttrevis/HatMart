@@ -3,7 +3,7 @@ import styles from './header.module.scss';
 import logo from '../../assets/logo.png';
 import Badge from 'react-bootstrap/Badge';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Cart from '../Cart/Cart';
 import { useCart } from './../../context/CartContext';
 const Header = () => {
@@ -37,27 +37,23 @@ const Header = () => {
 	return (
 		<header style={navbarStyle} className={styles.header}>
 			<nav>
-				<NavLink
-					onClick={handleCloseCart}
-					className={styles.logoContainer}
-					to="/"
-				>
+				<Link onClick={handleCloseCart} className={styles.logoContainer} to="/">
 					<img className={styles.logoImg} src={logo} />
 					<h1>Hat Store</h1>
-				</NavLink>
+				</Link>
 				<div>
-					<NavLink onClick={handleCloseCart} to="/">
+					<Link onClick={handleCloseCart} to="/">
 						Home
-					</NavLink>
+					</Link>
 
-					<NavLink onClick={handleCloseCart} to="/shop">
+					<Link onClick={handleCloseCart} to="/shop">
 						Shop
-					</NavLink>
+					</Link>
 
-					<NavLink className={styles.cartIcon} onClick={handleOpenCart}>
+					<Link className={styles.cartIcon} onClick={handleOpenCart}>
 						<AiOutlineShoppingCart size={30} />
 						{totalItems ? <Badge>-{totalItems}-</Badge> : ''}
-					</NavLink>
+					</Link>
 				</div>
 			</nav>
 			<Cart isOpen={isCartOpen} onClose={handleCloseCart} />

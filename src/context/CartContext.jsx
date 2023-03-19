@@ -21,7 +21,11 @@ export const CartProvider = ({ children }) => {
 	);
 
 	useEffect(() => {
-		localStorage.setItem('cartItems', JSON.stringify(cartItems));
+		try {
+			localStorage.setItem('cartItems', JSON.stringify(cartItems));
+		} catch (error) {
+			console.error('Error storing cart items:', error);
+		}
 	}, [cartItems]);
 
 	const addToCart = (item) => {
