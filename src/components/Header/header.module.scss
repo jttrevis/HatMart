@@ -94,7 +94,20 @@
         display: none;
       }
     }
+
   }
+
+.cartIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background: var(--primary-color);
+  span{
+    font-size: 13px;
+    color: rgb(0, 255, 21);
+  }
+}
   
 
 

@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import styles from './header.module.scss';
 import logo from '../../assets/logo.png';
+import Badge from 'react-bootstrap/Badge';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
 import { NavLink } from 'react-router-dom';
 import Cart from '../Cart/Cart';
+import { useCart } from './../../context/CartContext';
 const Header = () => {
 	const [isCartOpen, setIsCartOpen] = useState(false);
 	const [scrolled, setScrolled] = useState(false);
+	const { totalItems } = useCart();
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -51,8 +54,9 @@ const Header = () => {
 						Shop
 					</NavLink>
 
-					<NavLink onClick={handleOpenCart}>
+					<NavLink className={styles.cartIcon} onClick={handleOpenCart}>
 						<AiOutlineShoppingCart size={30} />
+						{totalItems ? <Badge>-{totalItems}-</Badge> : ''}
 					</NavLink>
 				</div>
 			</nav>
