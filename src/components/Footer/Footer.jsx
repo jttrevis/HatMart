@@ -1,11 +1,6 @@
 import React from 'react';
 import styles from './footer.module.scss';
-import {
-	FaFacebookSquare,
-	FaLinkedinIn,
-	FaInstagram,
-	FaWhatsapp,
-} from 'react-icons/fa';
+import { FaFacebookSquare, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 const Footer = () => {
 	return (

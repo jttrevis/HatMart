@@ -7,12 +7,12 @@ import { IoMdClose } from 'react-icons/io';
 import Button from './../Button/Button';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-const formatter = new Intl.NumberFormat('en-US', {
-	style: 'currency',
-	currency: 'USD',
-});
 
 const Cart = ({ isOpen, onClose }) => {
+	const formatter = new Intl.NumberFormat('en-US', {
+		style: 'currency',
+		currency: 'USD',
+	});
 	const {
 		cartItems,
 		totalPrice,
