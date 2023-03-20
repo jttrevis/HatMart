@@ -3,6 +3,7 @@ import decor from '../../assets/decor.svg';
 import styles from './hero.module.scss';
 import { InViewSection, InViewSection2 } from '../InViewSection';
 import { Link } from 'react-router-dom';
+import Button from '../Button/Button';
 const Hero = () => {
 	return (
 		<section className={styles.hero}>
@@ -18,7 +19,7 @@ const Hero = () => {
 						<div className={styles.buttonContainer}>
 							<img src={decor} alt="" />
 							<Link to={'/shop'}>
-								<button>Buy now</button>
+								<Button>Buy Now</Button>
 							</Link>
 						</div>
 					</InViewSection2>

@@ -9,13 +9,16 @@
   border-radius: 10px;
   transition: all 0.2s ease;
   cursor: pointer;
-  
- 
-  
-  
-  
 
   &:hover {
     filter: brightness(0.8);
   }
+}
+
+@media (max-width: 768px) {
+  .button{
+    width: 150px;
+    height: 43px;
+  }
+  
 }
