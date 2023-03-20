@@ -100,24 +100,26 @@
       nav{
         display: flex;
         width: 100%;
+        padding-right: 4;
         a{
-          position: sticky;
-          top: 0;
-          width: 100%;
-          font-size: 1rem;
-          padding: 5px;
+          
+          
+          font-size: 0.9rem;
+          padding: 7px 5px;
         }
       }
     }
       
-    .cartIcon{
-      
-      
-    }
+
+
 
     .logoContainer{
       h1{
         display: none;
+      }
+
+      .logoImg{
+        width: 78px;
       }
     }
 
