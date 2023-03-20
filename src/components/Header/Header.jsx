@@ -49,6 +49,9 @@ const Header = () => {
 					<Link onClick={handleCloseCart} to="/shop">
 						Shop
 					</Link>
+					<Link onClick={handleCloseCart} to="/about">
+						About
+					</Link>
 
 					<Link className={styles.cartIcon} onClick={handleOpenCart}>
 						<AiOutlineShoppingCart size={30} />
