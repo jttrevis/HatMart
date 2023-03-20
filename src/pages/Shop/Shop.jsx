@@ -36,7 +36,7 @@ const Shop = () => {
 					name="brand"
 					id="brand"
 				>
-					<option value="">All Brands</option>
+					<option value="">All</option>
 					{brandNames.map((brand) => {
 						return (
 							<option key={brand} value={brand}>
@@ -52,7 +52,7 @@ const Shop = () => {
 					name="color"
 					id="color"
 				>
-					<option value="">All Colors</option>
+					<option value="">All</option>
 					{colorNames.map((color) => {
 						return (
 							<option key={color} value={color}>

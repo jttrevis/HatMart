@@ -78,15 +78,41 @@
     }
   }
 
+  .cartIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background: var(--primary-color);
+    span{
+      font-size: 13px;
+      color: rgb(0, 255, 21);
+    }
+  }
+
   @media (max-width: 600px) {
     .header{
-      nav,  a{
-        position: sticky;
-        top: 0;
+      
+      width: 100%;
+      
+      padding-right: 3rem;
+      
+      nav{
+        display: flex;
         width: 100%;
-        font-size: 1rem;
-        padding: 10px;
+        a{
+          position: sticky;
+          top: 0;
+          width: 100%;
+          font-size: 1rem;
+          padding: 5px;
+        }
       }
+    }
+      
+    .cartIcon{
+      
+      
     }
 
     .logoContainer{
@@ -97,17 +123,7 @@
 
   }
 
-.cartIcon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  background: var(--primary-color);
-  span{
-    font-size: 13px;
-    color: rgb(0, 255, 21);
-  }
-}
+
   
 
 

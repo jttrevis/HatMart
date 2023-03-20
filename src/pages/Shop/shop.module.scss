@@ -1,5 +1,6 @@
 .shopContainer{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   padding-top: 6rem;
   color: white;
@@ -7,23 +8,27 @@
 
   .selectorContainer{
     display: flex;
-    flex-direction: column;
-    width: 16%;
-    
+    padding-top: 6rem;
+    position: sticky;
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+    align-items: center;
     background: transparent;
     height: 100%;
-    position: sticky;
-    top:150px;
-    left: 60px;
+    gap: 1rem;
+    
+   
+   
 
     label{
       color: whitesmoke;
-      padding: 5px;
+      
     }
 
     select{
       width: 100%;
-      max-width: 50%;
+      
       border: none;
       border-radius: 10px;
       padding: 6px;
@@ -80,14 +85,28 @@
 }
 
 @media (max-width: 500px) {
-  .itemsImage{
-    img{
+  .itemsImage {
+    img {
       width: 200px;
-      
-      
     }
   }
 
+  .shopContainer {
+    flex-direction: column;
+    padding-top: 3rem;
+  }
+
+  .selectorContainer {
+    position: static;
+    margin: 0 auto;
+    width: 70%;
+  }
   
-  
+  .hatsContainer {
+    width: 100%;
+    padding: 1rem;
+  }
 }
+
+  
+

@@ -130,6 +130,7 @@
 
   transition: all 0.8s ease-in-out;
   svg{
+    cursor: pointer;
     color: #ffff;
     &:hover{
       filter: brightness(0.8);

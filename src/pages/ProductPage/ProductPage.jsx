@@ -15,6 +15,7 @@ const ProductPage = () => {
 	return (
 		<div className={styles.itemContainer}>
 			<img className={styles.hatImage} src={hat.image} alt="" />
+
 			<ItemCard
 				brand={hat.brand}
 				id={hat.id}
