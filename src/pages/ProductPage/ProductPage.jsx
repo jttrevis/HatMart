@@ -4,9 +4,11 @@ import { hats } from '../../db.json';
 import decor from '../../assets/decor1.svg';
 import { useParams } from 'react-router-dom';
 import ItemCard from './../../components/Item/ItemCard';
+import { useCart } from './../../context/CartContext';
 const ProductPage = () => {
 	const { id } = useParams();
 	const hat = hats.find((h) => h.id === parseInt(id));
+	const { addToCart } = useCart();
 
 	if (!hat) {
 		return <div>Item not found</div>;
@@ -22,6 +24,7 @@ const ProductPage = () => {
 				color={hat.color}
 				price={hat.price}
 				size={hat.size}
+				onClick={() => addToCart(hat)}
 			/>
 		</div>
 	);
