@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './about.module.scss';
 import Button from './../../components/Button/Button';
 import { motion } from 'framer-motion';
+import decor from '../../assets/decor1.svg';
 import {
 	InViewSection,
 	InViewSection2,
@@ -70,7 +71,7 @@ const About = () => {
 								choosing our store, and we look forward to serving you!
 							</p>
 						</InViewSection2>
-
+						<img src={decor} alt="" />
 						<Link to={'/shop'}>
 							<motion.div
 								initial={{ opacity: 0 }}

@@ -29,6 +29,17 @@ const Shop = () => {
 
 	return (
 		<div className={styles.shopContainer}>
+			<motion.section
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1 }}
+				transition={{ duration: 1.5, delay: 2 }}
+				className={styles.title}
+			>
+				<h1>
+					S<br />
+					H<br />O<br />P
+				</h1>
+			</motion.section>
 			<section className={styles.selectorContainer}>
 				<label htmlFor="brand">Brand</label>
 				<select

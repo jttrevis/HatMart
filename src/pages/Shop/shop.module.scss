@@ -90,6 +90,27 @@
   }
 }
 
+
+.title{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+ 
+  top: 280px;
+  text-align: center;
+  z-index: -1;
+  
+  h1{
+    
+    
+    font-size: 15rem;
+    writing-mode: sideways-lr;
+    color: #00000046;
+    height: 100%;
+  }
+}
+
 @media (max-width: 500px) {
   .itemsImage {
     img {
@@ -112,6 +133,13 @@
     width: 100%;
     padding: 1rem;
   }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    display: none;
+  }
+  
 }
 
   
