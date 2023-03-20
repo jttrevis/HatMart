@@ -16,17 +16,17 @@ const Footer = () => {
 				<div className={styles.footerSection}>
 					<h4>Follow Us</h4>
 					<div className={styles.footerIcons}>
-						<a href="#">
+						<a href="https://www.facebook.com/">
 							<i className="">
 								<FaFacebookSquare size={25} />
 							</i>
 						</a>
-						<a href="#">
+						<a href="https://www.linkedin.com/in/jrtrevisol/">
 							<i className="">
 								<FaLinkedinIn size={25} />
 							</i>
 						</a>
-						<a href="#">
+						<a href="https://www.instagram.com/">
 							<i className="">
 								<FaInstagram size={25} />
 							</i>
