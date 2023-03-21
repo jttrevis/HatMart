@@ -39,8 +39,15 @@ export const CartProvider = ({ children }) => {
 							? { ...cartItem, quantity: cartItem.quantity + 1 }
 							: cartItem
 					),
-				toast.success(`${item.brand} Added on cart!`, {
-					position: toast.POSITION.BOTTOM_LEFT,
+				toast.success(`${item.brand} Added to cart!`, {
+					position: 'bottom-left',
+					autoClose: 3500,
+					hideProgressBar: false,
+					closeOnClick: true,
+					pauseOnHover: true,
+					draggable: true,
+					progress: undefined,
+					theme: 'dark',
 				})
 			);
 		} else {
@@ -48,8 +55,15 @@ export const CartProvider = ({ children }) => {
 				...prevCartItems,
 				{ ...item, quantity: 1 },
 			]);
-			toast.success(`${item.brand} Added on cart!`, {
-				position: toast.POSITION.BOTTOM_LEFT,
+			toast.success(`${item.brand} Added to cart!`, {
+				position: 'bottom-left',
+				autoClose: 3500,
+				hideProgressBar: false,
+				closeOnClick: true,
+				pauseOnHover: true,
+				draggable: true,
+				progress: undefined,
+				theme: 'dark',
 			});
 		}
 	};
