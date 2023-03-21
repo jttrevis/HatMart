@@ -4,16 +4,19 @@ import Header from './components/Header/Header';
 import { ToastContainer } from 'react-toastify';
 import AppRoutes from './AppRoutes';
 import { BackToTopButton } from './components/BackToTopButton/BackToTopButton';
+import { CartProvider } from './context/CartContext';
 
 function App() {
 	return (
-		<BrowserRouter>
-			<Header />
-			<AppRoutes />
-			<Footer />
-			<BackToTopButton />
-			<ToastContainer />
-		</BrowserRouter>
+		<CartProvider>
+			<BrowserRouter>
+				<Header />
+				<AppRoutes />
+				<Footer />
+				<BackToTopButton />
+				<ToastContainer />
+			</BrowserRouter>
+		</CartProvider>
 	);
 }
 
