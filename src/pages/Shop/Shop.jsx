@@ -35,7 +35,7 @@ const Shop = () => {
 				transition={{ duration: 1.5, delay: 2 }}
 				className={styles.title}
 			>
-				<h1>
+				<h1 className={styles.titleBanner}>
 					S<br />
 					H<br />O<br />P
 				</h1>
