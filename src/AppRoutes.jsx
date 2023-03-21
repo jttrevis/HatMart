@@ -10,14 +10,7 @@ const AppRoutes = () => {
 	useLayoutEffect(() => {
 		window.scrollTo(0, 0);
 	}, [location.pathname]);
-	return (
-		<Routes>
-			<Route path="/" element={<Home />} />
-			<Route path="/shop" element={<Shop />} />
-			<Route path="/hat/:id?" element={<ProductPage />} />
-			<Route path="/about" element={<About />} />
-		</Routes>
-	);
+	return <h1></h1>;
 };
 
 export default AppRoutes;
