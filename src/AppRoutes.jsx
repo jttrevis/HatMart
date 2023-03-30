@@ -13,9 +13,9 @@ const AppRoutes = () => {
 	return (
 		<Routes>
 			<Route path="/hat/:id?" element={<ProductPage />} />
-			<Route path="/about" element={<About />} />
-			<Route path="/shop" element={<Shop />} />
-			<Route path="/" element={<Home />} />
+			<Route path="/about" exact element={<About />} />
+			<Route path="/shop" exact element={<Shop />} />
+			<Route path="/" exact element={<Home />} />
 		</Routes>
 	);
 };

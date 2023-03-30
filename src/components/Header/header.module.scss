@@ -5,11 +5,15 @@
   width: 100%;
   z-index: 99999;
   overflow: hidden;
+  transition: background-color 0.3s ease-in-out;
 
   }
 
 
-  
+  .scrolled {
+    background-color: black;
+  }
+   
   
   nav{
     display: flex;

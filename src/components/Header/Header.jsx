@@ -6,7 +6,7 @@ import Cart from '../Cart/Cart';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 import { useCart } from './../../context/CartContext';
-
+import { memo } from 'react';
 
 const Header = () => {
 	const [isCartOpen, setIsCartOpen] = useState(false);
@@ -25,11 +25,6 @@ const Header = () => {
 		return () => window.removeEventListener('scroll', handleScroll);
 	}, []);
 
-	const navbarStyle = {
-		backgroundColor: scrolled ? 'black' : 'transparent',
-		transition: 'background-color 0.3s ease-in-out',
-	};
-
 	const handleOpenCart = () => {
 		setIsCartOpen(true);
 	};
@@ -38,21 +33,21 @@ const Header = () => {
 		setIsCartOpen(false);
 	};
 	return (
-		<header style={navbarStyle} className={styles.header}>
+		<header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
 			<nav>
 				<Link onClick={handleCloseCart} className={styles.logoContainer} to="/">
 					<img className={styles.logoImg} src={logo} />
 					<h1>Hat Store</h1>
 				</Link>
 				<div>
-					<Link onClick={handleCloseCart} to="/">
+					<Link onClick={handleCloseCart} to="/" exact>
 						Home
 					</Link>
 
-					<Link onClick={handleCloseCart} to="/shop">
+					<Link onClick={handleCloseCart} to="/shop" exact>
 						Shop
 					</Link>
-					<Link onClick={handleCloseCart} to="/about">
+					<Link onClick={handleCloseCart} to="/about" exact>
 						About
 					</Link>
 
@@ -67,4 +62,4 @@ const Header = () => {
 	);
 };
 
-export default Header;
+export default memo(Header);
