@@ -2,10 +2,12 @@ import React, { useEffect, useState } from 'react';
 import styles from './header.module.scss';
 import logo from '../../assets/logo.png';
 import Badge from 'react-bootstrap/Badge';
+import Cart from '../Cart/Cart';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
-import Cart from '../Cart/Cart';
 import { useCart } from './../../context/CartContext';
+
+
 const Header = () => {
 	const [isCartOpen, setIsCartOpen] = useState(false);
 	const [scrolled, setScrolled] = useState(false);
@@ -25,6 +27,7 @@ const Header = () => {
 
 	const navbarStyle = {
 		backgroundColor: scrolled ? 'black' : 'transparent',
+		transition: 'background-color 0.3s ease-in-out',
 	};
 
 	const handleOpenCart = () => {

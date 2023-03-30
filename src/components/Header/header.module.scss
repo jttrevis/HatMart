@@ -37,10 +37,16 @@
           content: '';
           position: absolute;
           width: 25px;
-          background: var(--primary-color);
-          height: 2px;
-          right: -40px;
-          bottom: 13px;
+          // background: var(--primary-color);
+          background-image: url('../../assets/arrow.svg');
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          height: 100%;
+          right: -90px;
+          width: 100px;
+          transform: rotate(90deg);
+          bottom: 0px;
           
         }
       }

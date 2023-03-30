@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './productPage.module.scss';
 import { hats } from '../../db.json';
-import decor from '../../assets/decor1.svg';
+
 import { useParams } from 'react-router-dom';
 import ItemCard from './../../components/Item/ItemCard';
 import { useCart } from './../../context/CartContext';

@@ -140,3 +140,16 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .cart {
+    width: 100%;
+    right:  unset;
+    right: 100%;
+  }
+  
+  .open {
+    right:  0;
+  }
+}
+
