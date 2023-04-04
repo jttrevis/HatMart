@@ -1,146 +1,132 @@
-.shopContainer{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-top: 6rem;
-  color: white;
+.shopContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-top: 6rem;
+	color: white;
 
+	.selectorContainer {
+		display: flex;
+		padding-top: 6rem;
+		position: sticky;
+		width: 100%;
+		max-width: 300px;
+		justify-content: center;
+		align-items: center;
+		background: transparent;
+		height: 100%;
+		gap: 1rem;
 
-  .selectorContainer{
-    display: flex;
-    padding-top: 6rem;
-    position: sticky;
-    width: 100%;
-    max-width: 300px;
-    justify-content: center;
-    align-items: center;
-    background: transparent;
-    height: 100%;
-    gap: 1rem;
-    
-   
-   
+		label {
+			color: whitesmoke;
+		}
 
-    label{
-      color: whitesmoke;
-      
-    }
+		select {
+			width: 100%;
 
-    select{
-      width: 100%;
-      
-      border: none;
-      border-radius: 10px;
-      padding: 6px;
-      outline: none;
-      background: var(--bg-grey);
-      color: var(--primary-color);
-      font-size: 1rem;
-      font-weight: bold;
+			border: none;
+			border-radius: 10px;
+			padding: 6px;
+			outline: none;
+			background: var(--bg-grey);
+			color: var(--primary-color);
+			font-size: 1rem;
+			font-weight: bold;
 
-      option{
-        background: var(--bg-grey);
-        
-      }
-    }
-  }
+			option {
+				background: var(--bg-grey);
+			}
+		}
+	}
 
-  .hatsContainer{
-    width: 84%;
-    padding-top: 6rem;
-    flex-wrap: wrap;
-    display: flex;
+	.hatsContainer {
+		width: 84%;
+		padding-top: 6rem;
+		flex-wrap: wrap;
+		display: flex;
 
-    .itemsContainer{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 2rem;
-      padding: 2rem;
+		.itemsContainer {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 2rem;
+			padding: 2rem;
 
-    .itemsImage{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      img{
-        max-width: 266px;
-        border-radius: 10px;
-      }
-    }
-    .item{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 1rem;
+			.itemsImage {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+				img {
+					max-width: 266px;
+					border-radius: 10px;
+				}
+			}
+			.item {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				gap: 1rem;
 
-      
-    img{
-      width: 50px;
-      border-radius: 10px;
-    }
-
-     
-    }
-
-    }
-
-  }
+				img {
+					width: 50px;
+					border-radius: 10px;
+				}
+			}
+		}
+	}
 }
 
+.title {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
 
-.title{
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
- 
-  top: 280px;
-  text-align: center;
-  z-index: -1;
-  
-  h1{
-    
-    
-    font-size: 15rem;
-    writing-mode: sideways-lr;
-    color: #00000046;
-    height: 100%;
-  }
+	top: 280px;
+	text-align: center;
+	z-index: -1;
+}
+
+.titleBanner {
+	font-size: 15rem;
+
+	position: absolute;
+	left: 0;
+	top: 45px;
+	text-align: center;
+	color: #00000046;
+	height: 100%;
 }
 
 @media (max-width: 500px) {
-  .itemsImage {
-    img {
-      width: 200px;
-    }
-  }
+	.itemsImage {
+		img {
+			width: 200px;
+		}
+	}
 
-  .shopContainer {
-    flex-direction: column;
-    padding-top: 3rem;
-  }
+	.shopContainer {
+		flex-direction: column;
+		padding-top: 3rem;
+	}
 
-  .selectorContainer {
-    position: static;
-    margin: 0 auto;
-    width: 70%;
-  }
-  
-  .hatsContainer {
-    width: 100%;
-    padding: 1rem;
-  }
+	.selectorContainer {
+		position: static;
+		margin: 0 auto;
+		width: 70%;
+	}
+
+	.hatsContainer {
+		width: 100%;
+		padding: 1rem;
+	}
 }
 
 @media (max-width: 768px) {
-  .titleBanner {
-    display: none;
-  }
-  
+	.titleBanner {
+		display: none;
+	}
 }
-
-  
-

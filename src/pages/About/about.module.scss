@@ -1,86 +1,79 @@
-.aboutContainer{
-  background: url('../../assets/bgAbout.png') no-repeat;
-  background-attachment: fixed;
-  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.7);
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  color: aliceblue;
-  width: 100%;
-  
- 
+.aboutContainer {
+	background: url('../../assets/bgAbout.png') no-repeat;
+	background-attachment: fixed;
+	box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.7);
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-size: cover;
+	color: aliceblue;
+	width: 100%;
 
-
-  padding-top: 6rem;
+	padding-top: 6rem;
 }
 
-.aboutTitle{
- 
-  h1{
-    float: left;
-    padding-left: 15px;
-    font-size: 10rem;
-    writing-mode: sideways-lr;
-    color: var(--bg-grey);
-    height: 100%;
-  }
+.aboutTitle {
+	h1 {
+		writing-mode: vertical-lr;
+		text-orientation: upright;
+		letter-spacing: -50px;
+		text-align: center;
+		float: left;
+		padding-left: 15px;
+		font-size: 10rem;
+		writing-mode: sideways-lr;
+		color: var(--bg-grey);
+		height: 100%;
+	}
 }
 
-.aboutInfo{
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding: 6rem  1rem;
+.aboutInfo {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	padding: 6rem 1rem;
 
-  img{
-    width: 50px;
-    border-radius: 10px;
-  }
+	img {
+		width: 50px;
+		border-radius: 10px;
+	}
 
-  
-
-  p{
-    width: 100%;
-  }
+	p {
+		width: 100%;
+	}
 }
-
 
 @media (min-width: 1100px) {
-  .aboutInfo p {
-    width: 70%;
-  }
-  
+	.aboutInfo p {
+		width: 70%;
+	}
 }
 
 @media (max-width: 768px) {
-  .aboutTitle h1 {
-    font-size: 7rem;
-  }
+	.aboutTitle h1 {
+		font-size: 7rem;
+	}
 
-  .aboutInfo p {
-    font-size: 1rem;
-  }
-  
+	.aboutInfo p {
+		font-size: 1rem;
+	}
 }
 
 @media (max-width: 600px) {
+	.aboutContainer {
+		background-attachment: local;
+	}
+	.aboutTitle h1 {
+		display: none;
+	}
 
-  .aboutContainer{
-    background-attachment: local;
-  }
-  .aboutTitle h1 {
-    display: none;
-  }
-
-  .aboutInfo{
-    padding: 2rem;
-    p {
-      width: 100%;
-    }
-  } 
-  
+	.aboutInfo {
+		padding: 2rem;
+		p {
+			width: 100%;
+		}
+	}
 }

@@ -1,73 +1,66 @@
 .footer {
-  display: flex;
-  color: whitesmoke;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  font-size: 14px;
-  font-weight: lighter;
-  padding-top: 3rem;
+	display: flex;
+	color: whitesmoke;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	font-size: 14px;
+	font-weight: lighter;
+	padding-top: 3rem;
 
+	.footerContainer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
 
+		.footerSection {
+			width: 300px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+			gap: 0.5rem;
+			margin-bottom: 2rem;
+			border-right: 1px solid #ffffff2c;
+			border-left: 1px solid #ffffff1e;
+			height: 100%;
 
- 
-  .footerContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+			h4 {
+				font-weight: 300;
+				font-size: 16px;
+				border-bottom: 0.5px solid #ffffff80;
+				margin-bottom: auto;
+			}
 
-    .footerSection {
-      width: 300px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-      gap: 0.5rem;
-      margin-bottom: 2rem;
-      border-right: 1px solid #ffffff2c;
-      border-left: 1px solid #ffffff1e;
-      height: 100%;
+			ul {
+				list-style: none;
+				display: flex;
+				flex-direction: column;
+				gap: 0.3rem;
+				font-size: 14px;
+			}
 
-      h4{
-        font-weight: 300;
-        font-size: 16px;
-        border-bottom: 0.5px solid #ffffff80;
-        margin-bottom: auto;
-      }
+			p {
+				font-size: 11px;
+				color: #ffffff83;
+			}
 
-      ul{
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        gap: 0.3rem;
-        font-size: 14px;
-      }
+			a {
+				text-decoration: none;
+				color: #ffffff83;
+			}
+		}
+	}
+	.footerBottom {
+		padding-top: 2rem;
+	}
 
-      p{
-        font-size: 11px;
-        color: #ffffff83;
-      }
-
-      a{
-        text-decoration: none;
-        color: #ffffff83;
-      }
-    }
-
-  
-  }
-  .footerBottom{
-    padding-top: 2rem;
-  }
-
-  .footerIcons{
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
-
- 
-  }
+	.footerIcons {
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+		align-items: center;
+	}
 }

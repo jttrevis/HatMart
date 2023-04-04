@@ -24,10 +24,7 @@ const About = () => {
 						transition={{ duration: 1.5, delay: 2 }}
 						className={styles.aboutTitle}
 					>
-						<h1>
-							A<br />
-							B<br />O<br />U<br />T
-						</h1>
+						<h1>ABOUT</h1>
 					</motion.section>
 
 					<section className={styles.aboutInfo}>

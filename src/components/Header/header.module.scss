@@ -1,143 +1,118 @@
 .header {
+	background: rgba(0, 0, 0, 0.24);
+	position: fixed;
+	width: 100%;
+	z-index: 99999;
+	overflow: hidden;
+	transition: background-color 0.3s ease-in-out;
+}
 
-  background: rgba(0, 0, 0, 0.24);
-  position: fixed;
-  width: 100%;
-  z-index: 99999;
-  overflow: hidden;
-  transition: background-color 0.3s ease-in-out;
+.scrolled {
+	background-color: black;
+}
 
-  }
+nav {
+	display: flex;
 
+	width: 100%;
+	margin: 0 auto;
+	justify-content: space-between;
+	align-items: center;
+	height: 6rem;
+	color: white;
 
-  .scrolled {
-    background-color: black;
-  }
-   
-  
-  nav{
-    display: flex;
-    
-    width: 100%;
-    margin: 0 auto;
-    justify-content: space-between;
-    align-items: center;
-    height: 6rem;
-    color: white;
-    
-    .logoContainer{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-decoration: none;
-  
-        h1{
-        font-weight: 400;
-        font-size: 2.1rem;
-        color: var(--primary-color);
-        position: relative;
-        
-        &:after{
-          content: '';
-          position: absolute;
-          width: 25px;
-          // background: var(--primary-color);
-          background-image: url('../../assets/arrow.svg');
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: contain;
-          height: 100%;
-          right: -90px;
-          width: 100px;
-          transform: rotate(90deg);
-          bottom: 0px;
-          
-        }
-      }
-      }
+	.logoContainer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-decoration: none;
 
-      .logoImg{
-        width: 100px;
-        margin-left: -15px;
-      }
- 
+		h1 {
+			font-weight: 400;
+			font-size: 2.1rem;
+			color: var(--primary-color);
+			position: relative;
 
-    div{
-      display: flex;
-      gap: 2rem;
-      align-items: center;
+			&:after {
+				content: '';
+				position: absolute;
+				width: 25px;
+				// background: var(--primary-color);
+				background-image: url('../../assets/arrow.svg');
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: contain;
+				height: 100%;
+				right: -90px;
+				width: 100px;
+				transform: rotate(90deg);
+				bottom: 0px;
+			}
+		}
+	}
 
-      a{
-        list-style: none;
-        font-size: 1.2rem;
-        padding: 1rem;
-        text-decoration: none;
-        border-radius: 10px;
-        color: whitesmoke;
-        transition: all 0.3s ease-in-out;
+	.logoImg {
+		width: 100px;
+		margin-left: -15px;
+	}
 
-        &:hover{
-          border-bottom: 1px solid var(--primary-color); 
-          color: var(--primary-color);
-          background-color: rgb(0, 0, 0);
-       
-          
-        }
+	div {
+		display: flex;
+		gap: 2rem;
+		align-items: center;
 
+		a {
+			list-style: none;
+			font-size: 1.2rem;
+			padding: 1rem;
+			text-decoration: none;
+			border-radius: 10px;
+			color: whitesmoke;
+			transition: all 0.3s ease-in-out;
 
-      }
-    }
-  }
+			&:hover {
+				border-bottom: 1px solid var(--primary-color);
+				color: var(--primary-color);
+				background-color: rgb(0, 0, 0);
+			}
+		}
+	}
+}
 
-  .cartIcon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    background: var(--primary-color);
-    span{
-      font-size: 13px;
-      color: rgb(0, 255, 21);
-    }
-  }
+.cartIcon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+	background: var(--primary-color);
+	span {
+		font-size: 13px;
+		color: rgb(0, 255, 21);
+	}
+}
 
-  @media (max-width: 768px) {
-    .header{
-      
-      width: 100%;
-      
-      padding-right: 3rem;
-      
-      nav{
-        display: flex;
-        width: 100%;
-        padding-right: 4;
-        a{
-          
-          
-          font-size: 0.9rem;
-          padding: 5px 5px;
-        }
-      }
-    }
-      
+@media (max-width: 768px) {
+	.header {
+		width: 100%;
 
+		nav {
+			display: flex;
+			width: 100%;
 
+			a {
+				font-size: 0.9rem;
+				padding: 10px 2px;
+			}
+		}
+	}
 
-    .logoContainer{
-      h1{
-        display: none;
-      }
+	.logoContainer {
+		h1 {
+			display: none;
+		}
 
-      .logoImg{
-        width: 78px;
-      }
-    }
-
-  }
-
-
-  
-
-
-
+		.logoImg {
+			width: 78px;
+		}
+	}
+}
