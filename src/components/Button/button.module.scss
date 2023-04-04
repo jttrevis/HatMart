@@ -1,6 +1,9 @@
 .button {
 	width: 200px;
 	height: 63px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	font-size: 1.2rem;
 	font-weight: bold;
 	border: none;
@@ -9,6 +12,8 @@
 	border-radius: 10px;
 	transition: all 0.2s ease;
 	cursor: pointer;
+	text-decoration: none;
+	outline: none;
 
 	&:hover {
 		filter: brightness(0.8);

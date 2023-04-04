@@ -17,15 +17,17 @@ const ProductPage = () => {
 	return (
 		<div className={styles.itemContainer}>
 			<img className={styles.hatImage} src={hat.image} alt="" />
-
-			<ItemCard
-				brand={hat.brand}
-				id={hat.id}
-				color={hat.color}
-				price={hat.price}
-				size={hat.size}
-				onClick={() => addToCart(hat)}
-			/>
+			<div>
+				<div className={styles.hatAbout}>{hat.about}</div>
+				<ItemCard
+					brand={hat.brand}
+					id={hat.id}
+					color={hat.color}
+					price={hat.price}
+					size={hat.size}
+					onClick={() => addToCart(hat)}
+				/>
+			</div>
 		</div>
 	);
 };

@@ -6,6 +6,7 @@
       "image": "/12g.png",
       "color": "Grey",
       "size": "Adjustable",
+      "about": "Made from premium materials, this hat features a sleek and sophisticated design that adds a touch of class to any outfit. The durable fabric is designed to withstand everyday wear and tear, while the breathable interior lining ensures comfort all day long. The adjustable strap at the back allows for a comfortable and secure fit, making it perfect for a day out in the city",
       "price": 19.99
     },
     {
@@ -14,6 +15,7 @@
       "image": "/1b.png",
       "color": "Black",
       "size": "Small/Medium",
+      "about": "Made from premium materials, this structured hat provides a comfortable and secure fit. With a sleek embroidered logo on the front panel, sturdy brim for sun protection, and a breathable interior lining, this snapback is both stylish and functional. The adjustable snapback closure ensures a perfect fit every time. Wear it out on the town or on your next outdoor adventure.",
       "price": 22.50
     },
     {
@@ -22,6 +24,7 @@
       "image": "/1g.png",
       "color": "Grey",
       "size": "Large/X-Large",
+      "about": "Made from premium materials, this hat features a sleek and sophisticated design that adds a touch of class to any outfit. The durable fabric is designed to withstand everyday wear and tear, while the breathable interior lining ensures comfort all day long. The adjustable strap at the back allows for a comfortable and secure fit, making it perfect for a day out in the city",
       "price": 24.99
     },
     {
@@ -30,6 +33,7 @@
       "image": "/1green.png",
       "color": "Green",
       "size": "Adjustable",
+      "about": "Made from premium materials, this structured hat provides a comfortable and secure fit. With a sleek embroidered logo on the front panel, sturdy brim for sun protection, and a breathable interior lining, this snapback is both stylish and functional. The adjustable snapback closure ensures a perfect fit every time. Wear it out on the town or on your next outdoor adventure.",
       "price": 21.99
     },
     {
@@ -38,6 +42,7 @@
       "image": "/1r.png",
       "color": "Red",
       "size": "Small/Medium",
+      "about": "The perfect addition to any casual and urban wardrobe. Made from premium materials, this hat features a classic design with a curved brim that provides shade and style. The front panel boasts a sleek and modern design, complete with an embroidered logo that adds a touch of urban style. The adjustable strap at the back allows for a comfortable and secure fit, making it perfect for outdoor activities or everyday wear.",
       "price": 18.75
     },
     {
@@ -46,6 +51,7 @@
       "image": "/1w.png",
       "color": "White",
       "size": "Large/X-Large",
+      "about": "Made from premium materials, this structured hat provides a comfortable and secure fit. With a sleek embroidered logo on the front panel, sturdy brim for sun protection, and a breathable interior lining, this snapback is both stylish and functional. The adjustable snapback closure ensures a perfect fit every time. Wear it out on the town or on your next outdoor adventure.",
       "price": 26.99
     },
     {
@@ -54,6 +60,7 @@
       "image": "/2b.png",
       "color": "Black",
       "size": "Adjustable",
+      "about": "Made from premium materials, this structured hat provides a comfortable and secure fit. With a sleek embroidered logo on the front panel, sturdy brim for sun protection, and a breathable interior lining, this snapback is both stylish and functional. The adjustable snapback closure ensures a perfect fit every time. Wear it out on the town or on your next outdoor adventure.",
       "price": 23.50
     },
     {
@@ -62,6 +69,7 @@
       "image": "/2blue.png",
       "color": "Blue",
       "size": "Small/Medium",
+      "about": "The perfect addition to any casual and urban wardrobe. Made from premium materials, this hat features a classic design with a curved brim that provides shade and style. The front panel boasts a sleek and modern design, complete with an embroidered logo that adds a touch of urban style. The adjustable strap at the back allows for a comfortable and secure fit, making it perfect for outdoor activities or everyday wear.",
       "price": 20.99
     },
     {
@@ -70,6 +78,7 @@
       "image": "/2g.png",
       "color": "Grey",
       "size": "Large/X-Large",
+      "about": "Made from premium materials, this structured hat provides a comfortable and secure fit. With a sleek embroidered logo on the front panel, sturdy brim for sun protection, and a breathable interior lining, this snapback is both stylish and functional. The adjustable snapback closure ensures a perfect fit every time. Wear it out on the town or on your next outdoor adventure.",
       "price": 25.99
     },
     {
@@ -78,6 +87,7 @@
       "image": "/2r.png",
       "color": "Red",
       "size": "Adjustable",
+      "about": "Made from premium materials, this structured hat provides a comfortable and secure fit. With a sleek embroidered logo on the front panel, sturdy brim for sun protection, and a breathable interior lining, this snapback is both stylish and functional. The adjustable snapback closure ensures a perfect fit every time. Wear it out on the town or on your next outdoor adventure.",
       "price": 21.25
     },
     {
@@ -86,6 +96,7 @@
       "image": "/2w.png",
       "color": "White",
       "size": "Small/Medium",
+      "about": "The perfect addition to any casual and urban wardrobe. Made from premium materials, this hat features a classic design with a curved brim that provides shade and style. The front panel boasts a sleek and modern design, complete with an embroidered logo that adds a touch of urban style. The adjustable strap at the back allows for a comfortable and secure fit, making it perfect for outdoor activities or everyday wear.",
       "price": 19.99
     },
     {
@@ -94,6 +105,7 @@
       "image": "/3b.png",
       "color": "Black",
       "size": "Large/X-Large",
+      "about": "Made from premium materials, this structured hat provides a comfortable and secure fit. With a sleek embroidered logo on the front panel, sturdy brim for sun protection, and a breathable interior lining, this snapback is both stylish and functional. The adjustable snapback closure ensures a perfect fit every time. Wear it out on the town or on your next outdoor adventure.",
       "price": 22.50
     },
     {
@@ -102,6 +114,7 @@
       "image": "/3blue.png",
       "color": "Blue",
       "size": "Adjustable",
+      "about": "Made from premium materials, this hat features a classic and relaxed design that adds a touch of effortless style to any outfit. The front panel boasts a simple and clean design, while the adjustable strap at the back allows for a comfortable and secure fit. Wear it with your favorite streetwear or dress it up for a night out on the town.",
       "price": 24.99
     },
     {
@@ -110,6 +123,7 @@
       "image": "/3g.png",
       "color": "Grey",
       "size": "Small/Medium",
+      "about": "Made from premium materials, this structured hat provides a comfortable and secure fit. With a sleek embroidered logo on the front panel, sturdy brim for sun protection, and a breathable interior lining, this snapback is both stylish and functional. The adjustable snapback closure ensures a perfect fit every time. Wear it out on the town or on your next outdoor adventure.",
       "price": 22.99
     },
     {
@@ -118,6 +132,7 @@
       "image": "/3r.png",
       "color": "Red",
       "size": "Large/X-Large",
+      "about": "Made from premium materials, this hat features a sleek and sophisticated design that adds a touch of class to any outfit. The durable fabric is designed to withstand everyday wear and tear, while the breathable interior lining ensures comfort all day long. The adjustable strap at the back allows for a comfortable and secure fit, making it perfect for a day out in the city",
       "price": 18.75
     },
     {
@@ -126,6 +141,7 @@
       "image": "/3w.png",
       "color": "White",
       "size": "Adjustable",
+      "about": "The perfect addition to any casual and trendy wardrobe. Made from premium materials, this hat features a unique and stylish design that adds a touch of personality to any outfit. The string adds a fun and functional element, making it perfect for outdoor activities or everyday wear. The brim is made from a sturdy material that provides excellent sun protection, while the breathable interior lining keeps you cool and comfortable. The adjustable drawstring ensures a comfortable and secure fit, making it perfect for all head sizes.",
       "price": 26.99
     },
     {
@@ -134,6 +150,7 @@
       "image": "/9b.png",
       "color": "Black",
       "size": "Small/Medium",
+      "about": "The perfect addition to any casual and trendy wardrobe. Made from premium materials, this hat features a classic and stylish design that adds a touch of sophistication to any outfit. The brim is made from a sturdy material that provides excellent sun protection, while the breathable interior lining keeps you cool and comfortable. The adjustable strap at the back ensures a comfortable and secure fit, making it perfect for outdoor activities or everyday wear.",
       "price": 23.50
     },
     {
@@ -142,6 +159,7 @@
       "image": "/4blue.png",
       "color": "Blue",
       "size": "Large/X-Large",
+      "about": "Made from premium materials, this structured hat provides a comfortable and secure fit. With a sleek embroidered logo on the front panel, sturdy brim for sun protection, and a breathable interior lining, this snapback is both stylish and functional. The adjustable snapback closure ensures a perfect fit every time. Wear it out on the town or on your next outdoor adventure.",
       "price": 20.99
     },
     {
@@ -150,6 +168,7 @@
       "image": "/4g.png",
       "color": "Grey",
       "size": "Adjustable",
+      "about": "The perfect addition to any casual and trendy wardrobe. Made from premium materials, this hat features a classic and stylish design that adds a touch of sophistication to any outfit. The brim is made from a sturdy material that provides excellent sun protection, while the breathable interior lining keeps you cool and comfortable. The adjustable strap at the back ensures a comfortable and secure fit, making it perfect for outdoor activities or everyday wear.",
       "price": 25.99
     },
     {
@@ -158,6 +177,7 @@
       "image": "/4r.png",
       "color": "Red",
       "size": "Small/Medium",
+      "about": "Made from premium materials, this hat features a stylish and sophisticated design that adds a touch of French elegance to any outfit. The soft and lightweight fabric is comfortable to wear all day long, while the classic design makes it versatile enough to wear with any outfit. Whether you're going to brunch with friends or running errands in the city, this beret will add a touch of chic to your look.",
       "price": 21.25
     },
     {
@@ -166,6 +186,7 @@
       "image": "/4w.png",
       "color": "White",
       "size": "Large/X-Large",
+      "about": "Made from premium materials, this hat features a classic and timeless design that adds a touch of elegance to any outfit. The brim is made from a sturdy material that provides excellent sun protection, while the breathable interior lining keeps you cool and comfortable. The adjustable strap at the back ensures a comfortable and secure fit, making it perfect for outdoor activities or everyday wear.",
       "price": 19.99
     },
     {
@@ -174,6 +195,7 @@
       "image": "/5b.png",
       "color": "Black",
       "size": "Adjustable",
+      "about": "Made from premium materials, this structured hat provides a comfortable and secure fit. With a sleek embroidered logo on the front panel, sturdy brim for sun protection, and a breathable interior lining, this snapback is both stylish and functional. The adjustable snapback closure ensures a perfect fit every time. Wear it out on the town or on your next outdoor adventure.",
       "price": 22.50
     },
     {
@@ -182,6 +204,7 @@
       "image": "/5blue.png",
       "color": "Blue",
       "size": "Small/Medium",
+      "about": "The perfect addition to any casual and urban wardrobe. Made from premium materials, this hat features a classic and relaxed design that adds a touch of effortless style to any outfit. The front panel boasts a simple and clean design, while the adjustable strap at the back allows for a comfortable and secure fit. Wear it with your favorite streetwear or dress it up for a night out on the town.",
       "price": 24.99
     },
     {
@@ -190,6 +213,7 @@
       "image": "/5g.png",
       "color": "Grey",
       "size": "Large/X-Large",
+      "about": "Made from premium materials, this structured hat provides a comfortable and secure fit. With a sleek embroidered logo on the front panel, sturdy brim for sun protection, and a breathable interior lining, this snapback is both stylish and functional. The adjustable snapback closure ensures a perfect fit every time. Wear it out on the town or on your next outdoor adventure.",
       "price": 21.99
     },
     {
@@ -198,6 +222,7 @@
       "image": "/5w.png",
       "color": "White",
       "size": "Adjustable",
+      "about": "The perfect addition to any casual and urban wardrobe. Made from premium materials, this hat features a simple yet stylish design that keeps your head warm and stylish. The knit fabric is soft and stretchy, ensuring a snug fit for all head sizes. The cuff adds a touch of urban style while providing extra warmth for your ears. Wear it with your favorite streetwear or dress it up for a night out with friends.",
       "price": 18.75
     },
     {
@@ -206,6 +231,7 @@
       "image": "/6b.png",
       "color": "Black",
       "size": "Small/Medium",
+      "about": "The perfect addition to any casual and urban wardrobe. Made from premium materials, this hat features a sleek and sophisticated design that adds a touch of class to any outfit. The durable fabric is designed to withstand everyday wear and tear, while the breathable interior lining ensures comfort all day long. The adjustable strap at the back allows for a comfortable and secure fit, making it perfect for a day out in the city.",
       "price": 26.99
     },
     {
@@ -214,6 +240,7 @@
       "image": "/6blue.png",
       "color": "Blue",
       "size": "Large/X-Large",
+      "about": "The perfect addition to any casual and urban wardrobe. Made from premium materials, this hat features a classic design with a curved brim that provides shade and style. The front panel boasts a sleek and modern design, complete with an embroidered logo that adds a touch of urban style. The adjustable strap at the back allows for a comfortable and secure fit, making it perfect for outdoor activities or everyday wear.",
       "price": 23.50
     },
     {
@@ -222,6 +249,7 @@
       "image": "/6g.png",
       "color": "Grey",
       "size": "Adjustable",
+      "about": "The perfect addition to any casual wardrobe. Made from premium materials, this hat features a structured design with a breathable mesh back that provides ventilation for all-day comfort. The front panel boasts a stylish design, complete with an embroidered logo that showcases your unique style. The snapback closure allows for easy adjustability, ensuring a perfect fit every time. Wear it to the beach or on your next road trip for a stylish and comfortable look.",
       "price": 20.99
     }
     

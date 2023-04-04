@@ -21,7 +21,7 @@ const About = () => {
 					<motion.section
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
-						transition={{ duration: 1.5, delay: 2 }}
+						transition={{ duration: 1.5, delay: 1 }}
 						className={styles.aboutTitle}
 					>
 						<h1>ABOUT</h1>
@@ -73,7 +73,7 @@ const About = () => {
 							<motion.div
 								initial={{ opacity: 0 }}
 								animate={{ opacity: 1 }}
-								transition={{ duration: 2.5, delay: 4 }}
+								transition={{ duration: 2.5, delay: 2.3 }}
 							>
 								<Button>Shop now</Button>
 							</motion.div>

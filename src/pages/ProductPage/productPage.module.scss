@@ -1,6 +1,7 @@
 .itemContainer {
 	display: flex;
 	padding: 7rem 0;
+	flex-wrap: wrap;
 	gap: 1rem;
 	justify-content: center;
 	align-items: center;
@@ -13,8 +14,46 @@
 		align-items: center;
 		border-radius: 10px;
 		width: 100%;
-		max-width: 800px;
+		max-width: 600px;
 		margin-top: 5rem;
+	}
+
+	.hatAbout {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		max-width: 600px;
+		color: whitesmoke;
+		text-align: center;
+		font-size: 1.3rem;
+		padding-top: 8rem;
+		position: relative;
+
+		&::before {
+			content: '';
+			background-image: url('../../assets/ornament.svg');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+			width: 100px;
+			height: 200px;
+			top: 0;
+			left: 0;
+			position: absolute;
+		}
+
+		&::after {
+			content: '';
+			background-image: url('../../assets/ornament.svg');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+			width: 100px;
+			height: 200px;
+			bottom: -120px;
+			right: 0;
+			position: absolute;
+		}
 	}
 }
 
@@ -22,5 +61,8 @@
 	.itemContainer {
 		flex-direction: column;
 		padding: 2rem 1rem;
+		.hatAbout {
+			font-size: 1rem;
+		}
 	}
 }

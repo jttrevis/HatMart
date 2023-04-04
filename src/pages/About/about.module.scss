@@ -9,7 +9,7 @@
 	background-size: cover;
 	color: aliceblue;
 	width: 100%;
-
+	position: relative;
 	padding-top: 6rem;
 }
 
@@ -19,10 +19,11 @@
 		text-orientation: upright;
 		letter-spacing: -50px;
 		text-align: center;
-		float: left;
+		position: absolute;
+		top: 50px;
 		padding-left: 15px;
-		font-size: 10rem;
-		writing-mode: sideways-lr;
+		font-size: 8rem;
+
 		color: var(--bg-grey);
 		height: 100%;
 	}

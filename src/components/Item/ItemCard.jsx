@@ -12,9 +12,11 @@ const ItemCard = ({ brand, size, color, price, image, id, onClick }) => {
 					<img className={styles.hatImage} src={image} alt="" />
 				</Link>
 				<div className={styles.item}>
-					<h3>Brand: {brand}</h3>
-					<p>Color: {color}</p>
-					<p>Size: {size}</p>
+					<ul>
+						<li>Brand: {brand}</li>
+						<li>Color: {color}</li>
+						<li>Size: {size}</li>
+					</ul>
 					<img src={decor} alt="" />
 					<Button onClick={onClick}>${price}</Button>
 				</div>
