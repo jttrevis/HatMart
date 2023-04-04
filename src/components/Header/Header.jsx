@@ -52,8 +52,11 @@ const Header = () => {
 					</Link>
 
 					<Link className={styles.cartIcon} onClick={handleOpenCart}>
-						<AiOutlineShoppingCart size={30} />
-						<Badge>-{totalItems}-</Badge>
+						<Badge>
+							{' '}
+							<AiOutlineShoppingCart size={30} />
+							{totalItems}
+						</Badge>
 					</Link>
 				</div>
 			</nav>

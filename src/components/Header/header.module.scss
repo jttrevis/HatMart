@@ -83,11 +83,21 @@ nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 8px;
+	padding: 0.7rem;
 	background: var(--primary-color);
+
 	span {
-		font-size: 13px;
-		color: rgb(0, 255, 21);
+		font-size: 1rem;
+
+		color: whitesmoke;
+		background-color: transparent !important;
+
+		svg {
+			margin-right: 11px;
+		}
+		&:hover {
+			color: var(--primary-color);
+		}
 	}
 }
 

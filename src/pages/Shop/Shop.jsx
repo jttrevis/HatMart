@@ -85,7 +85,7 @@ const Shop = () => {
 									<img src={hat.image} alt="" />
 								</Link>
 								<div className={styles.item}>
-									<h3>Brand: {hat.brand}</h3>
+									<p>Brand: {hat.brand}</p>
 									<p>Color: {hat.color}</p>
 									<p>Size: {hat.size}</p>
 									<img src={decor} alt="" />
