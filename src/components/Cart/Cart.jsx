@@ -38,7 +38,7 @@ const Cart = ({ isOpen, onClose }) => {
 							key={item.id}
 						>
 							<div className={styles.item}>
-								<Link to={'/hat/' + item.id}>
+								<Link to={'/hat/' + item.id} onClick={onClose}>
 									<img src={item.image} alt="" />
 								</Link>
 								<div className={styles.itemInfo}>
