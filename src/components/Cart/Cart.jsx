@@ -93,9 +93,7 @@ const Cart = ({ isOpen, onClose }) => {
 							{totalPrice < 100 && cartItems.length > 0 ? (
 								<span>{formatter.format(totalPrice + shippingCost)}</span>
 							) : (
-								<p>
-									<span>{formatter.format(totalPrice)}</span>
-								</p>
+								<span>{formatter.format(totalPrice)}</span>
 							)}
 						</h1>
 						<div className={styles.progressBar}>
