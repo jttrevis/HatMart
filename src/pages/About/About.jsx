@@ -68,13 +68,14 @@ const About = () => {
 								choosing our store, and we look forward to serving you!
 							</p>
 						</InViewSection2>
-						<img src={decor} alt="" />
 						<Link to={'/shop'}>
 							<motion.div
 								initial={{ opacity: 0 }}
 								animate={{ opacity: 1 }}
 								transition={{ duration: 2.5, delay: 2.3 }}
+								className={styles.button}
 							>
+								<img src={decor} alt="" />
 								<Button>Shop now</Button>
 							</motion.div>
 						</Link>

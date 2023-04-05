@@ -19,7 +19,7 @@
 			width: 300px;
 			display: flex;
 			flex-direction: column;
-			justify-content: space-around;
+			justify-content: center;
 			align-items: center;
 			gap: 0.5rem;
 			margin-bottom: 2rem;
@@ -34,15 +34,25 @@
 				margin-bottom: auto;
 			}
 
-			ul {
+			div {
 				list-style: none;
 				display: flex;
-				flex-direction: column;
+				text-align: center;
+
+				justify-content: center;
+				align-items: center;
 				gap: 0.3rem;
 				font-size: 14px;
 			}
 
+			ul {
+				list-style: none;
+			}
+
 			p {
+				display: flex;
+				justify-content: center;
+				align-items: center;
 				font-size: 11px;
 				color: #ffffff83;
 			}
