@@ -60,6 +60,11 @@
 			a {
 				text-decoration: none;
 				color: #ffffff83;
+				transition: all 0.2s;
+
+				&:hover {
+					color: var(--primary-color);
+				}
 			}
 		}
 	}
