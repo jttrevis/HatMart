@@ -3,13 +3,16 @@ import { ToastOptions, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
-type ItemType = {
+export type ItemType = {
 	id: number
-	image: string
+	image?: string
 	price: number
 	brand: string
 	color: string
-	quantity: number
+	quantity: number 
+	size: string
+
+	onClick?: () => void
 }
 
 type CartContextType = {

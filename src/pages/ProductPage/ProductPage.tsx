@@ -4,10 +4,26 @@ import { hats } from '../../db.json';
 
 import { useParams } from 'react-router-dom';
 import ItemCard from './../../components/Item/ItemCard';
-import { useCart } from './../../context/CartContext';
+import { ItemType, useCart } from './../../context/CartContext';
+
+
+export interface HatProps {
+	id: number
+	image: string
+	about: string
+	brand: string	
+	color: string
+	price: number
+	size: string
+	quantity: number
+	
+}
+
+
+
 const ProductPage = () => {
-	const { id } = useParams();
-	const hat = hats.find((h) => h.id === parseInt(id));
+	const { id } = useParams<{id: string}>();
+	const hat: HatProps | undefined = hats.find((h) => h.id === parseInt(id ?? '')) ;
 	const { addToCart } = useCart();
 
 	if (!hat) {
@@ -22,6 +38,7 @@ const ProductPage = () => {
 				<ItemCard
 					brand={hat.brand}
 					id={hat.id}
+					quantity={1}
 					color={hat.color}
 					price={hat.price}
 					size={hat.size}

@@ -36,22 +36,22 @@ const Header = () => {
 		<header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
 			<nav>
 				<Link onClick={handleCloseCart} className={styles.logoContainer} to="/">
-					<img className={styles.logoImg} src={logo} />
+					<img className={styles.logoImg} src={logo} alt='logo'/>
 					<h1>Hat Store</h1>
 				</Link>
 				<div>
-					<Link onClick={handleCloseCart} to="/" exact>
+					<Link onClick={handleCloseCart} to="/" >
 						Home
 					</Link>
 
-					<Link onClick={handleCloseCart} to="/shop" exact>
+					<Link onClick={handleCloseCart} to="/shop" >
 						Shop
 					</Link>
-					<Link onClick={handleCloseCart} to="/about" exact>
+					<Link onClick={handleCloseCart} to="/about" >
 						About
 					</Link>
 
-					<Link className={styles.cartIcon} onClick={handleOpenCart}>
+					<Link to={''} className={styles.cartIcon} onClick={handleOpenCart}>
 						<Badge>
 							{' '}
 							<AiOutlineShoppingCart size={30} />

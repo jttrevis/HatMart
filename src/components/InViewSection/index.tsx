@@ -1,7 +1,11 @@
-import { useRef } from 'react';
+import React, { ReactNode, useRef } from 'react';
 import { useInView } from 'framer-motion';
 
-export function InViewSection({ children }) {
+interface InViewSectionProps {
+	children: ReactNode
+}
+
+export function InViewSection({ children }: InViewSectionProps) {
 	const ref = useRef(null);
 	const isInView = useInView(ref, { once: true });
 
@@ -20,7 +24,7 @@ export function InViewSection({ children }) {
 	);
 }
 
-export function InViewSection2({ children }) {
+export function InViewSection2({ children }: InViewSectionProps) {
 	const ref = useRef(null);
 	const isInView = useInView(ref, { once: true });
 

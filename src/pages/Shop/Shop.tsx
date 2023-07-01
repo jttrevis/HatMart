@@ -6,13 +6,14 @@ import { Link } from 'react-router-dom';
 import Button from './../../components/Button/Button';
 import { useCart } from './../../context/CartContext';
 import { motion } from 'framer-motion';
+import { HatProps } from '../ProductPage/ProductPage';
 
 const Shop = () => {
-	const [selectedBrand, setSelectedBrand] = useState('');
-	const [selectedColor, setSelectedColor] = useState('');
-	const brandSet = new Set();
-	const colorSet = new Set();
-	hats.forEach((hat) => {
+	const [selectedBrand, setSelectedBrand] = useState<string>('');
+	const [selectedColor, setSelectedColor] = useState<string>('');
+	const brandSet = new Set<string>();
+	const colorSet = new Set<string>();
+	hats.forEach((hat: HatProps) => {
 		brandSet.add(hat.brand);
 		colorSet.add(hat.color);
 	});
@@ -89,7 +90,7 @@ const Shop = () => {
 									<p>Color: {hat.color}</p>
 									<p>Size: {hat.size}</p>
 									<img src={decor} alt="" />
-									<Button onClick={() => addToCart(hat)}>${hat.price}</Button>
+									<Button onClick={() => addToCart(hat)}>${hat.price.toString()}</Button>
 								</div>
 							</motion.div>
 						);

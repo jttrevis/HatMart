@@ -3,8 +3,11 @@ import { Link } from 'react-router-dom';
 import styles from './itemCard.module.scss';
 import decor from '../../assets/decor1.svg';
 import Button from './../Button/Button';
+import { ItemType } from '../../context/CartContext';
 
-const ItemCard = ({ brand, size, color, price, image, id, onClick }) => {
+
+
+const ItemCard = ({ brand, size, color, price, image, id, onClick }: ItemType) => {
 	return (
 		<>
 			<div className={styles.itemContainer}>
@@ -18,7 +21,7 @@ const ItemCard = ({ brand, size, color, price, image, id, onClick }) => {
 						<p>Size: {size}</p>
 					</div>
 					<img src={decor} alt="" />
-					<Button onClick={onClick}>${price}</Button>
+					<Button onClick={onClick}>${price.toString()}</Button>
 				</div>
 			</div>
 		</>

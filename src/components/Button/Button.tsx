@@ -2,8 +2,9 @@ import React from 'react'
 import styles from './button.module.scss'
 
 interface ButtonProps {
-	children: JSX.Element | string
+	children: string | string[]
  	onClick?: React.MouseEventHandler<HTMLButtonElement>
+	
 }
 
 const Button = ({ children, onClick } : ButtonProps) => {

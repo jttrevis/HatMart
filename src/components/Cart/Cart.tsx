@@ -9,7 +9,13 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 
-const Cart = ({ isOpen, onClose }) => {
+
+interface CartProps {
+	isOpen: boolean
+	onClose: () => void
+}
+
+const Cart = ({ isOpen, onClose } : CartProps) => {
 	const formatter = new Intl.NumberFormat('en-US', {
 		style: 'currency',
 		currency: 'USD',
@@ -103,7 +109,7 @@ const Cart = ({ isOpen, onClose }) => {
 							{totalPrice < 100 ? (
 								<ProgressBar
 									variant="danger"
-									now={totalPrice.toFixed(2)}
+									now={parseFloat(totalPrice.toFixed(2))}
 									label={`${totalPrice.toFixed(2)}%`}
 								/>
 							) : (
