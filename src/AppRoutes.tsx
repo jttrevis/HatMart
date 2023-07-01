@@ -5,6 +5,7 @@ import Shop from './pages/Shop/Shop';
 import ProductPage from './pages/ProductPage/ProductPage';
 import About from './pages/About/About';
 
+
 const AppRoutes = () => {
 	const location = useLocation();
 	useLayoutEffect(() => {
@@ -13,9 +14,9 @@ const AppRoutes = () => {
 	return (
 		<Routes>
 			<Route path="/hat/:id?" element={<ProductPage />} />
-			<Route path="/about" exact element={<About />} />
-			<Route path="/shop" exact element={<Shop />} />
-			<Route path="/" exact element={<Home />} />
+			<Route path="/about"  element={<About />} />
+			<Route path="/shop"  element={<Shop />} />
+			<Route path="/"  element={<Home />} />
 		</Routes>
 	);
 };

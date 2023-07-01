@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import { TbArrowBarToUp } from 'react-icons/tb';
+import React from 'react'
+
 
 export const BackToTopButton = () => {
 	const [backToTopButton, setBackToTopButton] = useState(false);

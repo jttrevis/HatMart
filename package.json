@@ -12,19 +12,30 @@
     "@prismicio/client": "^6.7.3",
     "@prismicio/react": "^2.5.2",
     "@splidejs/react-splide": "^0.7.12",
+    "@types/jest": "^29.5.2",
+    "@types/node": "^20.3.2",
     "framer-motion": "^10.6.0",
+    "node-sass": "^9.0.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.2",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
     "react-router-dom": "^6.10.0",
     "react-toastify": "^9.1.1",
-    "sass": "^1.58.3"
+    "sass": "^1.58.3",
+    "typescript": "^5.1.6"
   },
   "devDependencies": {
-    "@types/react": "^18.0.27",
-    "@types/react-dom": "^18.0.10",
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.6",
+    "@types/sass": "^1.45.0",
+    "@typescript-eslint/eslint-plugin": "^5.60.1",
+    "@typescript-eslint/parser": "^5.60.1",
     "@vitejs/plugin-react": "^3.1.0",
+    "eslint": "^8.43.0",
+    "eslint-import-resolver-typescript": "^3.5.5",
+    "eslint-plugin-react": "^7.32.2",
+    "sass-loader": "^13.3.2",
     "vite": "^4.1.0"
   }
 }

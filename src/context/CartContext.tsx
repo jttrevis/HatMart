@@ -1,23 +1,51 @@
-import { useState, createContext, useContext, useEffect } from 'react';
-import { toast } from 'react-toastify';
+import React, { useState, createContext, useContext, useEffect, ReactNode } from 'react';
+import { ToastOptions, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const CartContext = createContext({
-	cartItems: [],
+
+type ItemType = {
+	id: number
+	image: string
+	price: number
+	brand: string
+	color: string
+	quantity: number
+}
+
+type CartContextType = {
+	cartItems: ItemType[]
+	totalPrice: number
+	totalItems: number
+	
+
+	addToCart: (item: ItemType) => void
+	removeFromCart: (itemId: number) => void
+	getItemQuantity: (itemId: number) => number
+	deleteFromCart: (itemId: number) => void
+
+}
+
+const CartContext = createContext<CartContextType>({
+	cartItems: [] as ItemType[],
 	totalPrice: 0,
 	totalItems: 0,
 	addToCart: () => {},
 	removeFromCart: () => {},
-	updateQuantity: () => {},
-});
+	getItemQuantity: () => 0,
+	deleteFromCart: () => {}
+})
+
+type CartProviderProps = {
+	children: ReactNode
+}
 
 export const useCart = () => {
 	return useContext(CartContext);
 };
 
-export const CartProvider = ({ children }) => {
-	const [cartItems, setCartItems] = useState(
-		JSON.parse(localStorage.getItem('cartItems')) || []
+export const CartProvider = ({ children }: CartProviderProps) => {
+	const [cartItems, setCartItems] = useState<ItemType[]>(
+		JSON.parse(localStorage.getItem('cartItems') || '[])' )
 	);
 
 	useEffect(() => {
@@ -28,28 +56,27 @@ export const CartProvider = ({ children }) => {
 		}
 	}, [cartItems]);
 
-	const addToCart = (item) => {
+	const addToCart = (item: ItemType) => {
 		const existingItem = cartItems.find((cartItem) => cartItem.id === item.id);
-
+	
 		if (existingItem) {
-			setCartItems(
-				(prevCartItems) =>
-					prevCartItems.map((cartItem) =>
-						cartItem.id === item.id
-							? { ...cartItem, quantity: cartItem.quantity + 1 }
-							: cartItem
-					),
-				toast.success(`${item.brand} Added to cart!`, {
-					position: 'bottom-left',
-					autoClose: 3500,
-					hideProgressBar: false,
-					closeOnClick: true,
-					pauseOnHover: true,
-					draggable: true,
-					progress: undefined,
-					theme: 'dark',
-				})
+			setCartItems((prevCartItems) =>
+				prevCartItems.map((cartItem) =>
+					cartItem.id === item.id
+						? { ...cartItem, quantity: cartItem.quantity + 1 }
+						: cartItem
+				)
 			);
+			toast.success(`${item.brand} Added to cart!`, {
+				position: 'bottom-left',
+				autoClose: 3500,
+				hideProgressBar: false,
+				closeOnClick: true,
+				pauseOnHover: true,
+				draggable: true,
+				progress: undefined,
+				theme: 'dark',
+			} as ToastOptions);
 		} else {
 			setCartItems((prevCartItems) => [
 				...prevCartItems,
@@ -64,11 +91,11 @@ export const CartProvider = ({ children }) => {
 				draggable: true,
 				progress: undefined,
 				theme: 'dark',
-			});
+			} as ToastOptions);
 		}
 	};
 
-	const removeFromCart = (itemId) => {
+	const removeFromCart = (itemId: number) => {
 		const existingItem = cartItems.find((cartItem) => cartItem.id === itemId);
 
 		if (existingItem && existingItem.quantity > 1) {
@@ -86,13 +113,16 @@ export const CartProvider = ({ children }) => {
 		}
 	};
 
-	const deleteFromCart = (itemId) => {
+	const deleteFromCart = (itemId: number) => {
 		setCartItems((prevCartItems) =>
 			prevCartItems.filter((cartItem) => cartItem.id !== itemId)
 		);
 	};
 
-	const getItemQuantity = (itemId) => {
+
+
+
+	const getItemQuantity = (itemId: number) => {
 		const item = cartItems.find((cartItem) => cartItem.id === itemId);
 		return item ? item.quantity : 0;
 	};

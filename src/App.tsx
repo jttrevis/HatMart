@@ -5,6 +5,7 @@ import { ToastContainer } from 'react-toastify';
 import AppRoutes from './AppRoutes';
 import { BackToTopButton } from './components/BackToTopButton/BackToTopButton';
 import { CartProvider } from './context/CartContext';
+import React from 'react';
 
 function App() {
 	return (

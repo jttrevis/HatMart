@@ -4,10 +4,10 @@ import App from './App';
 
 import './index.css';
 import { PrismicProvider } from '@prismicio/react';
-import { client } from './services/prismic';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-	<PrismicProvider client={client}>
+
+ReactDOM.createRoot(document.getElementById('root')!).render(
+	
 		<App />
-	</PrismicProvider>
+	
 );
